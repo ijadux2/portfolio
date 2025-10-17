@@ -6,6 +6,35 @@
     <title>Portfolio - Kumar-Vaibhav (ijadux2)</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(45deg, #1e1e2e, #2a2a3a, #1e1e2e);
+            background-size: 400% 400%;
+            animation: gradientShift 10s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .skill-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-link:hover {
+            color: #89b4fa;
+            transition: color 0.3s ease;
+        }
+    </style>
 </head>
 <body class="bg-[#1e1e2e] font-sans text-[#cdd6f4]">
     <div class="container mx-auto px-4 py-8">
@@ -24,27 +53,27 @@
         <section class="mb-8 text-center">
             <h2 class="text-2xl font-semibold text-[#cdd6f4] mb-4">Skills</h2>
             <div id="skills" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
-                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md skill-card">
                     <h3 class="text-xl font-bold text-[#f38ba8]">🐚 Bash</h3>
                     <p class="text-[#bac2de]">Shell scripting for automation and system administration.</p>
                 </div>
-                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md skill-card">
                     <h3 class="text-xl font-bold text-[#cba6f7]">🐧 Nix</h3>
                     <p class="text-[#bac2de]">Declarative package management and reproducible builds.</p>
                 </div>
-                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md skill-card">
                     <h3 class="text-xl font-bold text-[#f9e2af]">🌙 Lua</h3>
                     <p class="text-[#bac2de]">Lightweight scripting for embedded systems and extensions.</p>
                 </div>
-                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md skill-card">
                     <h3 class="text-xl font-bold text-[#a6e3a1]">🐍 Python</h3>
                     <p class="text-[#bac2de]">Versatile programming for web, data, and automation tasks.</p>
                 </div>
-                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md skill-card">
                     <h3 class="text-xl font-bold text-[#89b4fa]">🐧 Linux</h3>
                     <p class="text-[#bac2de]">Expertise in Linux systems, distributions, and command-line proficiency.</p>
                 </div>
-                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md skill-card">
                     <h3 class="text-xl font-bold text-[#f5e0dc]">🪟 Window Manager Decorator</h3>
                     <p class="text-[#bac2de]">Customizing desktop environments with compositors and window managers like Hyprland.</p>
                 </div>
@@ -54,15 +83,15 @@
         <section class="mb-8">
             <h2 class="text-2xl font-semibold text-[#cdd6f4] mb-4 text-center">Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-                <div id="project1" class="bg-[#45475a] p-6 rounded-lg shadow-md">
+                <div id="project1" class="bg-[#45475a] p-6 rounded-lg shadow-md project-card">
                     <h3 class="text-xl font-bold mb-2 text-[#89b4fa]">Project 1: Automation Script</h3>
                     <p class="text-[#bac2de]">A Bash and Python tool for system backups.</p>
                 </div>
-                <div id="project2" class="bg-[#45475a] p-6 rounded-lg shadow-md">
+                <div id="project2" class="bg-[#45475a] p-6 rounded-lg shadow-md project-card">
                     <h3 class="text-xl font-bold mb-2 text-[#cba6f7]">Project 2: Config Manager</h3>
                     <p class="text-[#bac2de]">Nix-based configuration for reproducible environments.</p>
                 </div>
-                <div id="project3" class="bg-[#45475a] p-6 rounded-lg shadow-md">
+                <div id="project3" class="bg-[#45475a] p-6 rounded-lg shadow-md project-card">
                     <h3 class="text-xl font-bold mb-2 text-[#f9e2af]">Project 3: Game Mod</h3>
                     <p class="text-[#bac2de]">Lua scripts for game modifications.</p>
                 </div>
@@ -73,7 +102,7 @@
             <h2 class="text-2xl font-semibold text-[#cdd6f4] mb-4">Contact</h2>
             <div id="contact" class="space-y-4">
                 <p class="text-[#bac2de]">Email: kv26102009@gmail.com</p>
-                <p class="text-[#bac2de]">GitHub: <a href="https://github.com/ijadux2" class="text-[#89b4fa]">github.com/ijadux2</a></p>
+                <p class="text-[#bac2de]">GitHub: <a href="https://github.com/ijadux2" class="text-[#89b4fa] contact-link">github.com/ijadux2</a></p>
             </div>
         </section>
     </div>
@@ -112,6 +141,45 @@
             delay: anime.stagger(150, {start: 2000}),
             duration: 700,
             easing: 'easeOutExpo'
+        });
+
+        // Additional hover animations
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                anime({
+                    targets: card,
+                    scale: 1.05,
+                    duration: 300,
+                    easing: 'easeOutExpo'
+                });
+            });
+            card.addEventListener('mouseleave', () => {
+                anime({
+                    targets: card,
+                    scale: 1,
+                    duration: 300,
+                    easing: 'easeOutExpo'
+                });
+            });
+        });
+
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                anime({
+                    targets: card,
+                    scale: 1.05,
+                    duration: 300,
+                    easing: 'easeOutExpo'
+                });
+            });
+            card.addEventListener('mouseleave', () => {
+                anime({
+                    targets: card,
+                    scale: 1,
+                    duration: 300,
+                    easing: 'easeOutExpo'
+                });
+            });
         });
     </script>
 </body>
