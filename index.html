@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Kumar-Vaibhav (ijadux2)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body class="bg-[#1e1e2e] font-sans text-[#cdd6f4]">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-[#cdd6f4]">Kumar-Vaibhav (ijadux2)</h1>
+            <p class="text-lg text-[#bac2de]">Programmer</p>
+        </header>
+        <div class="flex flex-col items-center mb-8">
+            <img src="assets/IMG_20251012_235615_851.webp" alt="Photo" class="w-48 h-48 rounded-full object-cover shadow-lg animate-bounce">
+        </div>
+
+        <section class="mb-8 text-center">
+            <h2 class="text-2xl font-semibold text-[#cdd6f4] mb-4">About Me</h2>
+            <p class="text-[#bac2de] max-w-2xl mx-auto">I'm a passionate programmer with expertise in system scripting and configuration management. I enjoy building efficient tools and automating workflows.</p>
+        </section>
+        <section class="mb-8 text-center">
+            <h2 class="text-2xl font-semibold text-[#cdd6f4] mb-4">Skills</h2>
+            <div id="skills" class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-2xl mx-auto">
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-[#f38ba8]">🐚 Bash</h3>
+                    <p class="text-[#bac2de]">Shell scripting for automation and system administration.</p>
+                </div>
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-[#cba6f7]">🐧 Nix</h3>
+                    <p class="text-[#bac2de]">Declarative package management and reproducible builds.</p>
+                </div>
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-[#f9e2af]">🌙 Lua</h3>
+                    <p class="text-[#bac2de]">Lightweight scripting for embedded systems and extensions.</p>
+                </div>
+                <div class="bg-[#313244] p-4 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-[#a6e3a1]">🐍 Python</h3>
+                    <p class="text-[#bac2de]">Versatile programming for web, data, and automation tasks.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-[#cdd6f4] mb-4 text-center">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <div id="project1" class="bg-[#45475a] p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2 text-[#89b4fa]">Project 1: Automation Script</h3>
+                    <p class="text-[#bac2de]">A Bash and Python tool for system backups.</p>
+                </div>
+                <div id="project2" class="bg-[#45475a] p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2 text-[#cba6f7]">Project 2: Config Manager</h3>
+                    <p class="text-[#bac2de]">Nix-based configuration for reproducible environments.</p>
+                </div>
+                <div id="project3" class="bg-[#45475a] p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold mb-2 text-[#f9e2af]">Project 3: Game Mod</h3>
+                    <p class="text-[#bac2de]">Lua scripts for game modifications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8 text-center">
+            <h2 class="text-2xl font-semibold text-[#cdd6f4] mb-4">Contact</h2>
+            <div id="contact" class="space-y-4">
+                <p class="text-[#bac2de]">Email: ijadux2@example.com</p>
+                <p class="text-[#bac2de]">GitHub: <a href="https://github.com/ijadux2" class="text-[#89b4fa]">github.com/ijadux2</a></p>
+                <p class="text-[#bac2de]">LinkedIn: <a href="#" class="text-[#89b4fa]">linkedin.com/in/ijadux2</a></p>
+            </div>
+        </section>
+    </div>
+    <script>
+        // Anime.js animations
+        anime({
+            targets: 'header h1',
+            translateY: [-50, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            easing: 'easeOutExpo'
+        });
+
+        anime({
+            targets: '#skills div',
+            translateX: [-100, 0],
+            opacity: [0, 1],
+            delay: anime.stagger(300),
+            duration: 800,
+            easing: 'easeOutExpo'
+        });
+
+        anime({
+            targets: '#project1, #project2, #project3',
+            scale: [0.9, 1],
+            opacity: [0, 1],
+            delay: anime.stagger(200, {start: 1000}),
+            duration: 600,
+            easing: 'easeOutQuad'
+        });
+
+        anime({
+            targets: '#contact p',
+            translateY: [50, 0],
+            opacity: [0, 1],
+            delay: anime.stagger(150, {start: 2000}),
+            duration: 700,
+            easing: 'easeOutExpo'
+        });
+    </script>
+</body>
+</html>
