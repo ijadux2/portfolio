@@ -36,12 +36,12 @@
 <body class="bg-[#1e1e2e] text-[#cdd6f4]">
     <div class="container mx-auto px-4 py-8">
         <header class="text-center mb-8">
-            <div class="flex items-center justify-center mb-4">
+            <a href="https://github.com/ijadux2" target="_blank" class="flex items-center justify-center mb-4">
                 <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                 </svg>
                 <h1 class="text-3xl font-bold">Open-source</h1>
-            </div>
+            </a>
             <p class="text-lg text-[#bac2de]">Kumar Vaibhav (ijadux2)</p>
         </header>
 
@@ -53,7 +53,13 @@
                     <p class="text-[#bac2de] mb-4">A collection of custom scripts and tools for system automation.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/forge" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/forge.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-forge')">Clone</button>
+                            <div id="dropdown-forge" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/forge.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/forge.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -61,7 +67,13 @@
                     <p class="text-[#bac2de] mb-4">Configuration files and dotfiles for Hyprland window manager.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/hyprland-dots" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/hyprland-dots.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-hyprland-dots')">Clone</button>
+                            <div id="dropdown-hyprland-dots" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/hyprland-dots.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/hyprland-dots.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -69,7 +81,13 @@
                     <p class="text-[#bac2de] mb-4">A lightweight tool for managing system configurations.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/kabuto" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/kabuto.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-kabuto')">Clone</button>
+                            <div id="dropdown-kabuto" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/kabuto.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/kabuto.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -77,7 +95,13 @@
                     <p class="text-[#bac2de] mb-4">A simple messaging application built with modern web technologies.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/messeging_app" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/messeging_app.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-messeging_app')">Clone</button>
+                            <div id="dropdown-messeging_app" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/messeging_app.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/messeging_app.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -85,7 +109,13 @@
                     <p class="text-[#bac2de] mb-4">A personal application for productivity and organization.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/my-app" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/my-app.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-my-app')">Clone</button>
+                            <div id="dropdown-my-app" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/my-app.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/my-app.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -93,7 +123,13 @@
                     <p class="text-[#bac2de] mb-4">Custom configurations and scripts for Fedora Linux.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/my-fedora" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/my-fedora.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-my-fedora')">Clone</button>
+                            <div id="dropdown-my-fedora" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/my-fedora.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/my-fedora.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -101,7 +137,13 @@
                     <p class="text-[#bac2de] mb-4">A new project for innovative solutions.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/naya" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/naya.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-naya')">Clone</button>
+                            <div id="dropdown-naya" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/naya.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/naya.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -109,7 +151,13 @@
                     <p class="text-[#bac2de] mb-4">Nix configurations for reproducible environments.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/nixi" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/nixi.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-nixi')">Clone</button>
+                            <div id="dropdown-nixi" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/nixi.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/nixi.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -117,7 +165,13 @@
                     <p class="text-[#bac2de] mb-4">Configurations and scripts for Nushell.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/nushell" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/nushell.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-nushell')">Clone</button>
+                            <div id="dropdown-nushell" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/nushell.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/nushell.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -125,7 +179,13 @@
                     <p class="text-[#bac2de] mb-4">Personal Neovim configuration with plugins and settings.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/nvim-for-me" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/nvim-for-me.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-nvim-for-me')">Clone</button>
+                            <div id="dropdown-nvim-for-me" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/nvim-for-me.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/nvim-for-me.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -133,7 +193,13 @@
                     <p class="text-[#bac2de] mb-4">Notes and configurations for Obsidian.md.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/obsidian" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/obsidian.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-obsidian')">Clone</button>
+                            <div id="dropdown-obsidian" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/obsidian.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/obsidian.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -141,7 +207,13 @@
                     <p class="text-[#bac2de] mb-4">Personal setup and configurations for Ollama.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/ollama_for_me" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/ollama_for_me.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-ollama_for_me')">Clone</button>
+                            <div id="dropdown-ollama_for_me" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/ollama_for_me.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/ollama_for_me.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
@@ -149,7 +221,13 @@
                     <p class="text-[#bac2de] mb-4">A custom package manager script for Linux systems.</p>
                     <div class="flex space-x-2">
                         <a href="https://github.com/ijadux2/pkg-manager" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/pkg-manager.git')">Clone</button>
+                        <div class="relative">
+                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-pkg-manager')">Clone</button>
+                            <div id="dropdown-pkg-manager" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
+                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/pkg-manager.git</code>
+                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/pkg-manager.git')">Copy</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -499,4 +577,18 @@
                     <div class="contribution-tile contribution-0"></div>
                     <div class="contribution-tile contribution-1"></div>
                     <div class="contribution-tile contribution-2"></div>
-                    <div
+                    <div>
+</div>
+        </section>
+    </div>
+    <script>
+        function toggleDropdown(id) {
+            const dropdown = document.getElementById(id);
+            dropdown.classList.toggle("hidden");
+        }
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text);
+        }
+    </script>
+</body>
+</html>
