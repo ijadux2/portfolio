@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub - Kumar Vaibhav (ijadux2)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <style>
+        body {
+            font-family: 'JetBrains Mono', monospace;
+            background: #1e1e2e;
+            color: #cdd6f4;
+        }
+        .repo-card:hover {
+            transform: scale(1.02);
+            transition: transform 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+        .contribution-tile {
+            width: 12px;
+            height: 12px;
+            margin: 2px;
+            border-radius: 2px;
+        }
+        .contribution-0 { background-color: #313244; }
+        .contribution-1 { background-color: #a6e3a1; }
+        .contribution-2 { background-color: #89b4fa; }
+        .contribution-3 { background-color: #cba6f7; }
+        .contribution-4 { background-color: #f38ba8; }
+    </style>
+</head>
+<body class="bg-[#1e1e2e] text-[#cdd6f4]">
+    <div class="container mx-auto px-4 py-8">
+        <header class="text-center mb-8">
+            <div class="flex items-center justify-center mb-4">
+                <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+                <h1 class="text-3xl font-bold">Open-source</h1>
+            </div>
+            <p class="text-lg text-[#bac2de]">Kumar Vaibhav (ijadux2)</p>
+        </header>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Repositories</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#89b4fa]">forge</h3>
+                    <p class="text-[#bac2de] mb-4">A collection of custom scripts and tools for system automation.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/forge" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/forge.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#cba6f7]">hyprland-dots</h3>
+                    <p class="text-[#bac2de] mb-4">Configuration files and dotfiles for Hyprland window manager.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/hyprland-dots" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/hyprland-dots.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#f9e2af]">kabuto</h3>
+                    <p class="text-[#bac2de] mb-4">A lightweight tool for managing system configurations.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/kabuto" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/kabuto.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#f38ba8]">messeging_app</h3>
+                    <p class="text-[#bac2de] mb-4">A simple messaging application built with modern web technologies.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/messeging_app" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/messeging_app.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#a6e3a1]">my-app</h3>
+                    <p class="text-[#bac2de] mb-4">A personal application for productivity and organization.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/my-app" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/my-app.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#89b4fa]">my-fedora</h3>
+                    <p class="text-[#bac2de] mb-4">Custom configurations and scripts for Fedora Linux.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/my-fedora" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/my-fedora.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#cba6f7]">naya</h3>
+                    <p class="text-[#bac2de] mb-4">A new project for innovative solutions.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/naya" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/naya.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#f9e2af]">nixi</h3>
+                    <p class="text-[#bac2de] mb-4">Nix configurations for reproducible environments.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/nixi" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/nixi.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#f38ba8]">nushell</h3>
+                    <p class="text-[#bac2de] mb-4">Configurations and scripts for Nushell.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/nushell" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/nushell.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#a6e3a1]">nvim-for-me</h3>
+                    <p class="text-[#bac2de] mb-4">Personal Neovim configuration with plugins and settings.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/nvim-for-me" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/nvim-for-me.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#89b4fa]">obsidian</h3>
+                    <p class="text-[#bac2de] mb-4">Notes and configurations for Obsidian.md.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/obsidian" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/obsidian.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#cba6f7]">ollama_for_me</h3>
+                    <p class="text-[#bac2de] mb-4">Personal setup and configurations for Ollama.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/ollama_for_me" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/ollama_for_me.git')">Clone</button>
+                    </div>
+                </div>
+                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
+                    <h3 class="text-xl font-bold mb-2 text-[#f9e2af]">pkg-manager</h3>
+                    <p class="text-[#bac2de] mb-4">A custom package manager script for Linux systems.</p>
+                    <div class="flex space-x-2">
+                        <a href="https://github.com/ijadux2/pkg-manager" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
+                        <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="copyClone('git clone https://github.com/ijadux2/pkg-manager.git')">Clone</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-semibold mb-4">Contributions</h2>
+            <div class="bg-[#313244] p-6 rounded-lg shadow-md">
+                <p class="text-[#bac2de] mb-4">A summary of your contributions over the past year.</p>
+                <div class="flex flex-wrap justify-center">
+                    <!-- Mock contribution graph -->
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div class="contribution-tile contribution-3"></div>
+                    <div class="contribution-tile contribution-4"></div>
+                    <div class="contribution-tile contribution-0"></div>
+                    <div class="contribution-tile contribution-1"></div>
+                    <div class="contribution-tile contribution-2"></div>
+                    <div
