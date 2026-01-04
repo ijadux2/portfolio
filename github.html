@@ -4,591 +4,694 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GitHub - Kumar Vaibhav (ijadux2)</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+        :root {
+            --base: #1e1e2e;
+            --mantle: #181825;
+            --crust: #11111b;
+            --text: #cdd6f4;
+            --subtext1: #bac2de;
+            --subtext0: #a6adc8;
+            --overlay2: #9399b2;
+            --overlay1: #7f849c;
+            --overlay0: #6c7086;
+            --surface2: #585b70;
+            --surface1: #45475a;
+            --surface0: #313244;
+            --blue: #89b4fa;
+            --lavender: #b4befe;
+            --sapphire: #74c7ec;
+            --sky: #89dceb;
+            --teal: #94e2d5;
+            --green: #a6e3a1;
+            --yellow: #f9e2af;
+            --peach: #fab387;
+            --maroon: #eba0ac;
+            --red: #f38ba8;
+            --mauve: #cba6f7;
+            --pink: #f2cdcd;
+            --flamingo: #f2cdcd;
+            --rosewater: #f5e0dc;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'JetBrains Mono', monospace;
-            background: #1e1e2e;
-            color: #cdd6f4;
+            background: var(--base);
+            color: var(--text);
+            overflow-x: hidden;
+            position: relative;
         }
-        .repo-card:hover {
-            transform: scale(1.02);
+
+        .glassmorphism {
+            background: rgba(30, 30, 46, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+        }
+
+        .neon-glow {
+            text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, var(--blue), var(--lavender), var(--mauve));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100vh;
+            width: 280px;
+            background: var(--mantle);
+            border-right: 1px solid var(--surface0);
+            z-index: 1000;
+            transform: translateX(-100%);
             transition: transform 0.3s ease;
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
         }
-        .contribution-tile {
+
+        .sidebar.active {
+            transform: translateX(0);
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1100;
+            background: var(--surface0);
+            border: 1px solid var(--surface1);
+            color: var(--text);
+            padding: 10px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .menu-toggle:hover {
+            background: var(--surface1);
+            transform: scale(1.05);
+        }
+
+        .nav-item {
+            display: flex;
+            align-items: center;
+            padding: 16px 20px;
+            color: var(--subtext1);
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-left: 3px solid transparent;
+        }
+
+        .nav-item:hover {
+            background: var(--surface0);
+            color: var(--text);
+            border-left-color: var(--blue);
+        }
+
+        .nav-item.active {
+            background: var(--surface0);
+            color: var(--blue);
+            border-left-color: var(--blue);
+        }
+
+        .nav-item i {
+            margin-right: 12px;
+            width: 20px;
+        }
+
+        .repo-card {
+            background: var(--surface0);
+            border: 1px solid var(--surface1);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .repo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s;
+        }
+
+        .repo-card:hover::before {
+            left: 100%;
+        }
+
+        .repo-card:hover {
+            transform: translateY(-5px) scale(1.02);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+            border-color: var(--surface2);
+        }
+
+        .language-tag {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .language-python { background: var(--green); color: var(--crust); }
+        .language-bash { background: var(--red); color: var(--crust); }
+        .language-nix { background: var(--mauve); color: var(--crust); }
+        .language-lua { background: var(--yellow); color: var(--crust); }
+        .language-javascript { background: var(--yellow); color: var(--crust); }
+
+        .contribution-graph {
+            display: grid;
+            grid-template-columns: repeat(53, 1fr);
+            gap: 2px;
+            padding: 16px;
+        }
+
+        .contribution-day {
             width: 12px;
             height: 12px;
-            margin: 2px;
             border-radius: 2px;
+            background: var(--surface0);
+            transition: all 0.2s ease;
+            cursor: pointer;
         }
-        .contribution-0 { background-color: #313244; }
-        .contribution-1 { background-color: #a6e3a1; }
-        .contribution-2 { background-color: #89b4fa; }
-        .contribution-3 { background-color: #cba6f7; }
-        .contribution-4 { background-color: #f38ba8; }
+
+        .contribution-day:hover {
+            transform: scale(1.5);
+            z-index: 10;
+        }
+
+        .level-0 { background: var(--surface0); }
+        .level-1 { background: var(--green); opacity: 0.3; }
+        .level-2 { background: var(--green); opacity: 0.5; }
+        .level-3 { background: var(--green); opacity: 0.7; }
+        .level-4 { background: var(--green); opacity: 1; }
+
+        .search-container {
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 12px 16px 12px 45px;
+            background: var(--surface0);
+            border: 1px solid var(--surface1);
+            border-radius: 12px;
+            color: var(--text);
+            font-family: 'JetBrains Mono', monospace;
+            transition: all 0.3s ease;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--blue);
+            box-shadow: 0 0 0 3px rgba(137, 180, 250, 0.1);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--subtext1);
+        }
+
+        .filter-tabs {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .filter-tab {
+            padding: 8px 16px;
+            background: var(--surface0);
+            border: 1px solid var(--surface1);
+            border-radius: 8px;
+            color: var(--subtext1);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .filter-tab:hover {
+            background: var(--surface1);
+            color: var(--text);
+        }
+
+        .filter-tab.active {
+            background: var(--blue);
+            color: var(--crust);
+            border-color: var(--blue);
+        }
+
+        .stats-card {
+            background: var(--surface0);
+            border: 1px solid var(--surface1);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .stats-card:hover {
+            transform: translateY(-2px);
+            border-color: var(--surface2);
+        }
+
+        .clone-button {
+            background: var(--green);
+            color: var(--crust);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .clone-button:hover {
+            background: var(--teal);
+            transform: scale(1.05);
+        }
+
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            margin-top: 8px;
+            background: var(--mantle);
+            border: 1px solid var(--surface1);
+            border-radius: 8px;
+            padding: 12px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            z-index: 100;
+            min-width: 300px;
+        }
+
+        .dropdown-menu code {
+            display: block;
+            background: var(--surface0);
+            padding: 8px;
+            border-radius: 4px;
+            margin-bottom: 8px;
+            font-size: 0.875rem;
+        }
+
+        .mobile-only {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .mobile-only {
+                display: block;
+            }
+            .sidebar {
+                width: 100%;
+            }
+            .contribution-graph {
+                grid-template-columns: repeat(26, 1fr);
+            }
+        }
+
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
     </style>
 </head>
-<body class="bg-[#1e1e2e] text-[#cdd6f4]">
-    <div class="container mx-auto px-4 py-8">
-        <header class="text-center mb-8">
-            <a href="https://github.com/ijadux2" target="_blank" class="flex items-center justify-center mb-4">
-                <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                <h1 class="text-3xl font-bold">Open-source</h1>
-            </a>
-            <p class="text-lg text-[#bac2de]">Kumar Vaibhav (ijadux2)</p>
-        </header>
+<body>
+    <!-- Mobile Menu Toggle -->
+    <button class="menu-toggle mobile-only" onclick="toggleSidebar()">
+        <i class="fas fa-bars"></i>
+    </button>
 
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Repositories</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#89b4fa]">forge</h3>
-                    <p class="text-[#bac2de] mb-4">A collection of custom scripts and tools for system automation.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/forge" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-forge')">Clone</button>
-                            <div id="dropdown-forge" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/forge.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/forge.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar" id="sidebar">
+        <div class="p-6">
+            <div class="flex items-center mb-8">
+                <img src="assets/IMG_20251012_235615_851.webp" alt="Profile" class="w-16 h-16 rounded-full mr-4">
+                <div>
+                    <h2 class="text-lg font-bold gradient-text">ijadux2</h2>
+                    <p class="text-sm text-subtext1">Open Source Developer</p>
                 </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#cba6f7]">hyprland-dots</h3>
-                    <p class="text-[#bac2de] mb-4">Configuration files and dotfiles for Hyprland window manager.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/hyprland-dots" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-hyprland-dots')">Clone</button>
-                            <div id="dropdown-hyprland-dots" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/hyprland-dots.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/hyprland-dots.git')">Copy</button>
-                            </div>
-                        </div>
+            </div>
+            
+            <ul class="space-y-2">
+                <li>
+                    <a href="index.html" class="nav-item">
+                        <i class="fas fa-home"></i>
+                        <span>Portfolio</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="github.html" class="nav-item active">
+                        <i class="fab fa-github"></i>
+                        <span>Repositories</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/ijadux2" target="_blank" class="nav-item">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="mt-8 p-4 glassmorphism rounded-lg">
+                <h3 class="font-semibold mb-3 text-blue">Quick Stats</h3>
+                <div class="space-y-2 text-sm">
+                    <div class="flex justify-between">
+                        <span class="text-subtext1">Repositories</span>
+                        <span class="text-green">12</span>
                     </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#f9e2af]">kabuto</h3>
-                    <p class="text-[#bac2de] mb-4">A lightweight tool for managing system configurations.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/kabuto" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-kabuto')">Clone</button>
-                            <div id="dropdown-kabuto" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/kabuto.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/kabuto.git')">Copy</button>
-                            </div>
-                        </div>
+                    <div class="flex justify-between">
+                        <span class="text-subtext1">Contributions</span>
+                        <span class="text-yellow">1,247</span>
                     </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#f38ba8]">messeging_app</h3>
-                    <p class="text-[#bac2de] mb-4">A simple messaging application built with modern web technologies.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/messeging_app" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-messeging_app')">Clone</button>
-                            <div id="dropdown-messeging_app" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/messeging_app.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/messeging_app.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#a6e3a1]">my-app</h3>
-                    <p class="text-[#bac2de] mb-4">A personal application for productivity and organization.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/my-app" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-my-app')">Clone</button>
-                            <div id="dropdown-my-app" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/my-app.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/my-app.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#89b4fa]">my-fedora</h3>
-                    <p class="text-[#bac2de] mb-4">Custom configurations and scripts for Fedora Linux.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/my-fedora" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-my-fedora')">Clone</button>
-                            <div id="dropdown-my-fedora" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/my-fedora.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/my-fedora.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#cba6f7]">naya</h3>
-                    <p class="text-[#bac2de] mb-4">A new project for innovative solutions.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/naya" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-naya')">Clone</button>
-                            <div id="dropdown-naya" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/naya.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/naya.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#f9e2af]">nixi</h3>
-                    <p class="text-[#bac2de] mb-4">Nix configurations for reproducible environments.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/nixi" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-nixi')">Clone</button>
-                            <div id="dropdown-nixi" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/nixi.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/nixi.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#f38ba8]">nushell</h3>
-                    <p class="text-[#bac2de] mb-4">Configurations and scripts for Nushell.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/nushell" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-nushell')">Clone</button>
-                            <div id="dropdown-nushell" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/nushell.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/nushell.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#a6e3a1]">nvim-for-me</h3>
-                    <p class="text-[#bac2de] mb-4">Personal Neovim configuration with plugins and settings.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/nvim-for-me" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-nvim-for-me')">Clone</button>
-                            <div id="dropdown-nvim-for-me" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/nvim-for-me.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/nvim-for-me.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#89b4fa]">obsidian</h3>
-                    <p class="text-[#bac2de] mb-4">Notes and configurations for Obsidian.md.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/obsidian" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-obsidian')">Clone</button>
-                            <div id="dropdown-obsidian" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/obsidian.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/obsidian.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#cba6f7]">ollama_for_me</h3>
-                    <p class="text-[#bac2de] mb-4">Personal setup and configurations for Ollama.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/ollama_for_me" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-ollama_for_me')">Clone</button>
-                            <div id="dropdown-ollama_for_me" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/ollama_for_me.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/ollama_for_me.git')">Copy</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="bg-[#313244] p-6 rounded-lg shadow-md repo-card">
-                    <h3 class="text-xl font-bold mb-2 text-[#f9e2af]">pkg-manager</h3>
-                    <p class="text-[#bac2de] mb-4">A custom package manager script for Linux systems.</p>
-                    <div class="flex space-x-2">
-                        <a href="https://github.com/ijadux2/pkg-manager" class="bg-[#45475a] px-4 py-2 rounded text-sm hover:bg-[#585b70]">View on GitHub</a>
-                        <div class="relative">
-                            <button class="bg-[#a6e3a1] px-4 py-2 rounded text-sm text-[#1e1e2e] hover:bg-[#94e2cd]" onclick="toggleDropdown('dropdown-pkg-manager')">Clone</button>
-                            <div id="dropdown-pkg-manager" class="hidden absolute top-full mt-1 bg-[#313244] border border-[#45475a] rounded p-2 shadow-lg z-10">
-                                <code class="text-[#cdd6f4] text-xs">git clone https://github.com/ijadux2/pkg-manager.git</code>
-                                <button class="ml-2 bg-[#89b4fa] px-2 py-1 rounded text-xs text-[#1e1e2e]" onclick="copyToClipboard('git clone https://github.com/ijadux2/pkg-manager.git')">Copy</button>
-                            </div>
-                        </div>
+                    <div class="flex justify-between">
+                        <span class="text-subtext1">Stars</span>
+                        <span class="text-blue">89</span>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </nav>
 
-        <section class="mb-8">
-            <h2 class="text-2xl font-semibold mb-4">Contributions</h2>
-            <div class="bg-[#313244] p-6 rounded-lg shadow-md">
-                <p class="text-[#bac2de] mb-4">A summary of your contributions over the past year.</p>
-                <div class="flex flex-wrap justify-center">
-                    <!-- Mock contribution graph -->
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div class="contribution-tile contribution-3"></div>
-                    <div class="contribution-tile contribution-4"></div>
-                    <div class="contribution-tile contribution-0"></div>
-                    <div class="contribution-tile contribution-1"></div>
-                    <div class="contribution-tile contribution-2"></div>
-                    <div>
-</div>
-        </section>
-    </div>
+    <!-- Main Content -->
+    <main class="ml-0 md:ml-80">
+        <div class="container mx-auto px-4 py-8">
+            <!-- Header -->
+            <header class="text-center mb-12">
+                <div class="inline-flex items-center mb-6 floating">
+                    <i class="fab fa-github text-5xl text-blue mr-4"></i>
+                    <h1 class="text-4xl font-bold gradient-text">GitHub Repositories</h1>
+                </div>
+                <p class="text-lg text-subtext1">Explore my open-source contributions</p>
+                
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto mt-8">
+                    <div class="stats-card">
+                        <div class="text-2xl font-bold text-blue">12</div>
+                        <div class="text-sm text-subtext1">Repositories</div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="text-2xl font-bold text-green">1,247</div>
+                        <div class="text-sm text-subtext1">Contributions</div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="text-2xl font-bold text-yellow">89</div>
+                        <div class="text-sm text-subtext1">Stars</div>
+                    </div>
+                    <div class="stats-card">
+                        <div class="text-2xl font-bold text-mauve">24</div>
+                        <div class="text-sm text-subtext1">Forks</div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Search and Filter -->
+            <section class="mb-8">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" class="search-input" placeholder="Search repositories..." oninput="filterRepositories()">
+                </div>
+                
+                <div class="filter-tabs">
+                    <button class="filter-tab active" onclick="setFilter('all', this)">All</button>
+                    <button class="filter-tab" onclick="setFilter('system', this)">System Tools</button>
+                    <button class="filter-tab" onclick="setFilter('config', this)">Configuration</button>
+                    <button class="filter-tab" onclick="setFilter('scripts', this)">Scripts</button>
+                    <button class="filter-tab" onclick="setFilter('apps', this)">Applications</button>
+                </div>
+            </section>
+
+            <!-- Repository Grid -->
+            <section class="mb-12">
+                <div id="repoGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Repository cards will be dynamically inserted here -->
+                </div>
+            </section>
+
+            <!-- Contribution Graph -->
+            <section class="mb-8">
+                <h2 class="text-2xl font-bold mb-6 text-center gradient-text">Contribution Activity</h2>
+                <div class="glassmorphism rounded-xl p-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm text-subtext1">Total contributions: 1,247</span>
+                        <div class="flex items-center space-x-2">
+                            <span class="text-xs text-subtext0">Less</span>
+                            <div class="flex space-x-1">
+                                <div class="w-3 h-3 level-0 rounded-sm"></div>
+                                <div class="w-3 h-3 level-1 rounded-sm"></div>
+                                <div class="w-3 h-3 level-2 rounded-sm"></div>
+                                <div class="w-3 h-3 level-3 rounded-sm"></div>
+                                <div class="w-3 h-3 level-4 rounded-sm"></div>
+                            </div>
+                            <span class="text-xs text-subtext0">More</span>
+                        </div>
+                    </div>
+                    <div class="contribution-graph" id="contributionGraph">
+                        <!-- Contribution squares will be dynamically generated -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
     <script>
-        function toggleDropdown(id) {
-            const dropdown = document.getElementById(id);
-            dropdown.classList.toggle("hidden");
+        // Repository data
+        const repositories = [
+            { name: 'forge', description: 'A collection of custom scripts and tools for system automation', language: 'bash', category: 'scripts', url: 'https://github.com/ijadux2/forge' },
+            { name: 'hyprland-dots', description: 'Configuration files and dotfiles for Hyprland window manager', language: 'nix', category: 'config', url: 'https://github.com/ijadux2/hyprland-dots' },
+            { name: 'kabuto', description: 'A lightweight tool for managing system configurations', language: 'python', category: 'system', url: 'https://github.com/ijadux2/kabuto' },
+            { name: 'messeging_app', description: 'A simple messaging application built with modern web technologies', language: 'javascript', category: 'apps', url: 'https://github.com/ijadux2/messeging_app' },
+            { name: 'my-app', description: 'A personal application for productivity and organization', language: 'python', category: 'apps', url: 'https://github.com/ijadux2/my-app' },
+            { name: 'my-fedora', description: 'Custom configurations and scripts for Fedora Linux', language: 'bash', category: 'system', url: 'https://github.com/ijadux2/my-fedora' },
+            { name: 'naya', description: 'A new project for innovative solutions', language: 'python', category: 'apps', url: 'https://github.com/ijadux2/naya' },
+            { name: 'nixi', description: 'Nix configurations for reproducible environments', language: 'nix', category: 'config', url: 'https://github.com/ijadux2/nixi' },
+            { name: 'nushell', description: 'Configurations and scripts for Nushell', language: 'bash', category: 'config', url: 'https://github.com/ijadux2/nushell' },
+            { name: 'nvim-for-me', description: 'Personal Neovim configuration with plugins and settings', language: 'lua', category: 'config', url: 'https://github.com/ijadux2/nvim-for-me' },
+            { name: 'obsidian', description: 'Notes and configurations for Obsidian.md', language: 'javascript', category: 'config', url: 'https://github.com/ijadux2/obsidian' },
+            { name: 'ollama_for_me', description: 'Personal setup and configurations for Ollama', language: 'bash', category: 'config', url: 'https://github.com/ijadux2/ollama_for_me' }
+        ];
+
+        let currentFilter = 'all';
+
+        // Initialize page
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.innerWidth > 768) {
+                document.getElementById('sidebar').classList.add('active');
+            }
+            renderRepositories();
+            generateContributionGraph();
+            animateCards();
+        });
+
+        // Toggle sidebar
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
         }
+
+        // Render repository cards
+        function renderRepositories(filter = 'all', searchTerm = '') {
+            const grid = document.getElementById('repoGrid');
+            const filteredRepos = repositories.filter(repo => {
+                const matchesFilter = filter === 'all' || repo.category === filter;
+                const matchesSearch = repo.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                                     repo.description.toLowerCase().includes(searchTerm.toLowerCase());
+                return matchesFilter && matchesSearch;
+            });
+
+            grid.innerHTML = filteredRepos.map((repo, index) => `
+                <div class="repo-card glassmorphism rounded-xl p-6" data-index="${index}">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-github text-2xl text-blue mr-3"></i>
+                        <h3 class="text-xl font-bold text-blue">${repo.name}</h3>
+                    </div>
+                    <p class="text-subtext1 mb-4">${repo.description}</p>
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="language-tag language-${repo.language}">${repo.language}</span>
+                        <span class="text-xs text-overlay2">${repo.category}</span>
+                    </div>
+                    <div class="flex gap-2">
+                        <a href="${repo.url}" target="_blank" class="flex-1 bg-blue hover:bg-lavender text-white text-center py-2 px-4 rounded-lg transition-colors">
+                            <i class="fas fa-external-link-alt mr-2"></i>View
+                        </a>
+                        <div class="relative">
+                            <button class="clone-button" onclick="toggleDropdown('${repo.name}')">
+                                <i class="fas fa-code-branch mr-2"></i>Clone
+                            </button>
+                            <div id="dropdown-${repo.name}" class="dropdown-menu hidden">
+                                <code>git clone ${repo.url}.git</code>
+                                <button class="clone-button w-full" onclick="copyToClipboard('${repo.url}')">
+                                    <i class="fas fa-copy mr-2"></i>Copy URL
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+
+            if (filteredRepos.length === 0) {
+                grid.innerHTML = '<div class="col-span-full text-center py-12 text-subtext1">No repositories found matching your criteria.</div>';
+            }
+
+            // Re-animate new cards
+            setTimeout(() => animateCards(), 100);
+        }
+
+        // Filter repositories
+        function filterRepositories() {
+            const searchTerm = document.getElementById('searchInput').value;
+            renderRepositories(currentFilter, searchTerm);
+        }
+
+        // Set filter
+        function setFilter(filter, button) {
+            currentFilter = filter;
+            
+            // Update active tab
+            document.querySelectorAll('.filter-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            button.classList.add('active');
+            
+            // Re-render with new filter
+            const searchTerm = document.getElementById('searchInput').value;
+            renderRepositories(filter, searchTerm);
+        }
+
+        // Toggle dropdown
+        function toggleDropdown(repoName) {
+            const dropdown = document.getElementById(`dropdown-${repoName}`);
+            
+            // Close all other dropdowns
+            document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                if (menu !== dropdown) {
+                    menu.classList.add('hidden');
+                }
+            });
+            
+            dropdown.classList.toggle('hidden');
+        }
+
+        // Copy to clipboard
         function copyToClipboard(text) {
-            navigator.clipboard.writeText(text);
+            navigator.clipboard.writeText(text).then(() => {
+                // Show success feedback
+                const button = event.target.closest('button');
+                const originalText = button.innerHTML;
+                button.innerHTML = '<i class="fas fa-check mr-2"></i>Copied!';
+                button.style.background = 'var(--green)';
+                
+                setTimeout(() => {
+                    button.innerHTML = originalText;
+                    button.style.background = '';
+                }, 2000);
+            });
         }
+
+        // Generate contribution graph
+        function generateContributionGraph() {
+            const graph = document.getElementById('contributionGraph');
+            const weeks = 53;
+            const daysPerWeek = 7;
+            
+            let html = '';
+            for (let week = 0; week < weeks; week++) {
+                for (let day = 0; day < daysPerWeek; day++) {
+                    const level = Math.floor(Math.random() * 5);
+                    html += `<div class="contribution-day level-${level}" title="Contribution level ${level}"></div>`;
+                }
+            }
+            graph.innerHTML = html;
+        }
+
+        // Animate cards
+        function animateCards() {
+            anime({
+                targets: '.repo-card',
+                translateY: [50, 0],
+                opacity: [0, 1],
+                delay: anime.stagger(100, {start: 200}),
+                duration: 600,
+                easing: 'easeOutExpo'
+            });
+
+            // Hover effects
+            document.querySelectorAll('.repo-card').forEach(card => {
+                card.addEventListener('mouseenter', () => {
+                    anime({
+                        targets: card,
+                        scale: 1.02,
+                        duration: 300,
+                        easing: 'easeOutExpo'
+                    });
+                });
+
+                card.addEventListener('mouseleave', () => {
+                    anime({
+                        targets: card,
+                        scale: 1,
+                        duration: 300,
+                        easing: 'easeOutExpo'
+                    });
+                });
+            });
+        }
+
+        // Close dropdowns when clicking outside
+        document.addEventListener('click', function(event) {
+            if (!event.target.closest('.clone-button') && !event.target.closest('.dropdown-menu')) {
+                document.querySelectorAll('.dropdown-menu').forEach(menu => {
+                    menu.classList.add('hidden');
+                });
+            }
+        });
+
+        // Responsive behavior
+        window.addEventListener('resize', function() {
+            const sidebar = document.getElementById('sidebar');
+            if (window.innerWidth > 768) {
+                sidebar.classList.add('active');
+            } else {
+                sidebar.classList.remove('active');
+            }
+        });
     </script>
 </body>
 </html>
