@@ -551,17 +551,9 @@
                         <a href="${repo.url}" target="_blank" class="flex-1 bg-blue hover:bg-lavender text-white text-center py-2 px-4 rounded-lg transition-colors">
                             <i class="fas fa-external-link-alt mr-2"></i>View
                         </a>
-                        <div class="relative">
-                            <button class="clone-button" onclick="toggleDropdown('${repo.name}')">
-                                <i class="fas fa-code-branch mr-2"></i>Clone
-                            </button>
-                            <div id="dropdown-${repo.name}" class="dropdown-menu hidden">
-                                <code>git clone ${repo.url}.git</code>
-                                <button class="clone-button w-full" onclick="copyToClipboard('${repo.url}')">
-                                    <i class="fas fa-copy mr-2"></i>Copy URL
-                                </button>
-                            </div>
-                        </div>
+                        <button class="clone-button" onclick="copyCloneUrl('${repo.url}.git')">
+                            <i class="fas fa-code-branch mr-2"></i>Clone
+                        </button>
                     </div>
                 </div>
             `).join('');
@@ -595,34 +587,52 @@
             renderRepositories(filter, searchTerm);
         }
 
-        // Toggle dropdown
-        function toggleDropdown(repoName) {
-            const dropdown = document.getElementById(`dropdown-${repoName}`);
-            
-            // Close all other dropdowns
-            document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                if (menu !== dropdown) {
-                    menu.classList.add('hidden');
-                }
+
+
+        // Copy clone URL to clipboard
+        function copyCloneUrl(cloneUrl) {
+            const gitCloneCommand = `git clone ${cloneUrl}`;
+            navigator.clipboard.writeText(gitCloneCommand).then(() => {
+                // Show notification
+                showNotification('Copied to clipboard!');
             });
-            
-            dropdown.classList.toggle('hidden');
         }
 
-        // Copy to clipboard
-        function copyToClipboard(text) {
-            navigator.clipboard.writeText(text).then(() => {
-                // Show success feedback
-                const button = event.target.closest('button');
-                const originalText = button.innerHTML;
-                button.innerHTML = '<i class="fas fa-check mr-2"></i>Copied!';
-                button.style.background = 'var(--green)';
-                
-                setTimeout(() => {
-                    button.innerHTML = originalText;
-                    button.style.background = '';
-                }, 2000);
+        // Show notification
+        function showNotification(message) {
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = 'fixed top-4 right-4 bg-green text-crust px-6 py-3 rounded-lg shadow-lg z-50 flex items-center space-x-2';
+            notification.innerHTML = `
+                <i class="fas fa-check-circle"></i>
+                <span>${message}</span>
+            `;
+            
+            // Add to page
+            document.body.appendChild(notification);
+            
+            // Animate in
+            anime({
+                targets: notification,
+                translateX: [100, 0],
+                opacity: [0, 1],
+                duration: 300,
+                easing: 'easeOutExpo'
             });
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                anime({
+                    targets: notification,
+                    translateX: [0, 100],
+                    opacity: [1, 0],
+                    duration: 300,
+                    easing: 'easeInExpo',
+                    complete: () => {
+                        document.body.removeChild(notification);
+                    }
+                });
+            }, 3000);
         }
 
         // Generate contribution graph
@@ -674,14 +684,7 @@
             });
         }
 
-        // Close dropdowns when clicking outside
-        document.addEventListener('click', function(event) {
-            if (!event.target.closest('.clone-button') && !event.target.closest('.dropdown-menu')) {
-                document.querySelectorAll('.dropdown-menu').forEach(menu => {
-                    menu.classList.add('hidden');
-                });
-            }
-        });
+
 
         // Responsive behavior
         window.addEventListener('resize', function() {

@@ -1,655 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Kumar-Vaibhav (ijadux2)</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Kumar-Vaibhav (ijadux2)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
 
-        :root {
-            --base: #1e1e2e;
-            --mantle: #181825;
-            --crust: #11111b;
-            --text: #cdd6f4;
-            --subtext1: #bac2de;
-            --subtext0: #a6adc8;
-            --overlay2: #9399b2;
-            --overlay1: #7f849c;
-            --overlay0: #6c7086;
-            --surface2: #585b70;
-            --surface1: #45475a;
-            --surface0: #313244;
-            --blue: #89b4fa;
-            --lavender: #b4befe;
-            --sapphire: #74c7ec;
-            --sky: #89dceb;
-            --teal: #94e2d5;
-            --green: #a6e3a1;
-            --yellow: #f9e2af;
-            --peach: #fab387;
-            --maroon: #eba0ac;
-            --red: #f38ba8;
-            --mauve: #cba6f7;
-            --pink: #f2cdcd;
-            --flamingo: #f2cdcd;
-            --rosewater: #f5e0dc;
-        }
+    :root {
+      --base: #1e1e2e;
+      --mantle: #181825;
+      --crust: #11111b;
+      --text: #cdd6f4;
+      --subtext1: #bac2de;
+      --subtext0: #a6adc8;
+      --overlay2: #9399b2;
+      --overlay1: #7f849c;
+      --overlay0: #6c7086;
+      --surface2: #585b70;
+      --surface1: #45475a;
+      --surface0: #313244;
+      --blue: #89b4fa;
+      --lavender: #b4befe;
+      --sapphire: #74c7ec;
+      --sky: #89dceb;
+      --teal: #94e2d5;
+      --green: #a6e3a1;
+      --yellow: #f9e2af;
+      --peach: #fab387;
+      --maroon: #eba0ac;
+      --red: #f38ba8;
+      --mauve: #cba6f7;
+      --pink: #f2cdcd;
+      --flamingo: #f2cdcd;
+      --rosewater: #f5e0dc;
+    }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            font-family: 'JetBrains Mono', monospace;
-            background: var(--base);
-            color: var(--text);
-            overflow-x: hidden;
-            position: relative;
-        }
+    body {
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--base);
+      color: var(--text);
+      overflow-x: hidden;
+      position: relative;
+    }
 
-        .glassmorphism {
-            background: rgba(30, 30, 46, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-        }
+    .glassmorphism {
+      background: rgba(30, 30, 46, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    }
 
-        .neon-glow {
-            text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
-        }
+    .neon-glow {
+      text-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+    }
 
-        .gradient-text {
-            background: linear-gradient(135deg, var(--blue), var(--lavender), var(--mauve));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+    .gradient-text {
+      background: linear-gradient(135deg, var(--blue), var(--lavender), var(--mauve));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-        .sidebar {
-            position: fixed;
-            left: 0;
-            top: 0;
-            height: 100vh;
-            width: 280px;
-            background: var(--mantle);
-            border-right: 1px solid var(--surface0);
-            z-index: 1000;
-            transform: translateX(-100%);
-            transition: transform 0.3s ease;
-        }
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 280px;
+      background: var(--mantle);
+      border-right: 1px solid var(--surface0);
+      z-index: 1000;
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
 
-        .sidebar.active {
-            transform: translateX(0);
-        }
+    .sidebar.active {
+      transform: translateX(0);
+    }
 
-        .minimap {
-            position: fixed;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 60px;
-            height: 300px;
-            background: rgba(30, 30, 46, 0.8);
-            border: 1px solid var(--surface0);
-            border-radius: 8px;
-            padding: 8px;
-            z-index: 900;
-        }
+    .minimap {
+      position: fixed;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 60px;
+      height: 300px;
+      background: rgba(30, 30, 46, 0.8);
+      border: 1px solid var(--surface0);
+      border-radius: 8px;
+      padding: 8px;
+      z-index: 900;
+    }
 
-        .minimap-dot {
-            width: 8px;
-            height: 8px;
-            background: var(--surface1);
-            border-radius: 50%;
-            margin: 12px auto;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+    .minimap-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--surface1);
+      border-radius: 50%;
+      margin: 12px auto;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
 
-        .minimap-dot.active {
-            background: var(--blue);
-            transform: scale(1.3);
-        }
+    .minimap-dot.active {
+      background: var(--blue);
+      transform: scale(1.3);
+    }
 
-        .minimap-dot:hover {
-            background: var(--lavender);
-        }
+    .minimap-dot:hover {
+      background: var(--lavender);
+    }
 
-        .menu-toggle {
-            position: fixed;
-            top: 20px;
-            left: 20px;
-            z-index: 1100;
-            background: var(--surface0);
-            border: 1px solid var(--surface1);
-            color: var(--text);
-            padding: 10px;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-        }
+    .menu-toggle {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1100;
+      background: var(--surface0);
+      border: 1px solid var(--surface1);
+      color: var(--text);
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
 
-        .menu-toggle:hover {
-            background: var(--surface1);
-            transform: scale(1.05);
-        }
+    .menu-toggle:hover {
+      background: var(--surface1);
+      transform: scale(1.05);
+    }
 
-        .nav-item {
-            display: flex;
-            align-items: center;
-            padding: 16px 20px;
-            color: var(--subtext1);
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border-left: 3px solid transparent;
-        }
+    .nav-item {
+      display: flex;
+      align-items: center;
+      padding: 16px 20px;
+      color: var(--subtext1);
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border-left: 3px solid transparent;
+    }
 
-        .nav-item:hover {
-            background: var(--surface0);
-            color: var(--text);
-            border-left-color: var(--blue);
-        }
+    .nav-item:hover {
+      background: var(--surface0);
+      color: var(--text);
+      border-left-color: var(--blue);
+    }
 
-        .nav-item.active {
-            background: var(--surface0);
-            color: var(--blue);
-            border-left-color: var(--blue);
-        }
+    .nav-item.active {
+      background: var(--surface0);
+      color: var(--blue);
+      border-left-color: var(--blue);
+    }
 
-        .nav-item i {
-            margin-right: 12px;
-            width: 20px;
-        }
+    .nav-item i {
+      margin-right: 12px;
+      width: 20px;
+    }
 
-        .skill-card, .project-card {
-            background: var(--surface0);
-            border: 1px solid var(--surface1);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
+    .skill-card,
+    .project-card {
+      background: var(--surface0);
+      border: 1px solid var(--surface1);
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
 
-        .skill-card::before, .project-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-            transition: left 0.5s;
-        }
+    .skill-card::before,
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+      transition: left 0.5s;
+    }
 
-        .skill-card:hover::before, .project-card:hover::before {
-            left: 100%;
-        }
+    .skill-card:hover::before,
+    .project-card:hover::before {
+      left: 100%;
+    }
 
-        .skill-card:hover, .project-card:hover {
-            transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-            border-color: var(--surface2);
-        }
+    .skill-card:hover,
+    .project-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+      border-color: var(--surface2);
+    }
 
-        .floating {
-            animation: floating 3s ease-in-out infinite;
-        }
+    .floating {
+      animation: floating 3s ease-in-out infinite;
+    }
 
-        @keyframes floating {
-            0%, 100% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-        }
+    @keyframes floating {
 
-        .pulse {
-            animation: pulse 2s infinite;
-        }
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
 
-        @keyframes pulse {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.8; }
-        }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
 
-        .terminal-cursor {
-            animation: blink 1s infinite;
-        }
+    .pulse {
+      animation: pulse 2s infinite;
+    }
 
-        @keyframes blink {
-            0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0; }
-        }
+    @keyframes pulse {
 
-        .section {
-            padding: 100px 20px;
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+      0%,
+      100% {
+        opacity: 1;
+      }
 
-        .mobile-only {
-            display: none;
-        }
+      50% {
+        opacity: 0.8;
+      }
+    }
 
-        @media (max-width: 768px) {
-            .mobile-only {
-                display: block;
-            }
-            .minimap {
-                display: none;
-            }
-            .sidebar {
-                width: 100%;
-            }
-        }
+    .terminal-cursor {
+      animation: blink 1s infinite;
+    }
 
-        .skill-icon {
-            font-size: 2rem;
-            margin-bottom: 8px;
-        }
+    @keyframes blink {
 
-        .terminal {
-            background: var(--crust);
-            border: 1px solid var(--surface0);
-            border-radius: 8px;
-            font-family: 'JetBrains Mono', monospace;
-            padding: 16px;
-            margin: 16px 0;
-        }
+      0%,
+      50% {
+        opacity: 1;
+      }
 
-        .terminal-header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 12px;
-            padding-bottom: 8px;
-            border-bottom: 1px solid var(--surface0);
-        }
+      51%,
+      100% {
+        opacity: 0;
+      }
+    }
 
-        .terminal-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            margin-right: 8px;
-        }
+    .section {
+      padding: 100px 20px;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-        .terminal-content {
-            color: var(--green);
-        }
-    </style>
+    .mobile-only {
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      .mobile-only {
+        display: block;
+      }
+
+      .minimap {
+        display: none;
+      }
+
+      .sidebar {
+        width: 100%;
+      }
+    }
+
+    .skill-icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .terminal {
+      background: var(--crust);
+      border: 1px solid var(--surface0);
+      border-radius: 8px;
+      font-family: 'JetBrains Mono', monospace;
+      padding: 16px;
+      margin: 16px 0;
+    }
+
+    .terminal-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--surface0);
+    }
+
+    .terminal-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      margin-right: 8px;
+    }
+
+    .terminal-content {
+      color: var(--green);
+    }
+  </style>
 </head>
+
 <body>
-    <!-- Mobile Menu Toggle -->
-    <button class="menu-toggle mobile-only" onclick="toggleSidebar()">
-        <i class="fas fa-bars"></i>
-    </button>
+  <!-- Mobile Menu Toggle -->
+  <button class="menu-toggle mobile-only" onclick="toggleSidebar()">
+    <i class="fas fa-bars"></i>
+  </button>
 
-    <!-- Sidebar Navigation -->
-    <nav class="sidebar" id="sidebar">
-        <div class="p-6">
-            <div class="flex items-center mb-8">
-                <img src="assets/IMG_20251012_235615_851.webp" alt="Profile" class="w-16 h-16 rounded-full mr-4">
-                <div>
-                    <h2 class="text-lg font-bold gradient-text">ijadux2</h2>
-                    <p class="text-sm text-subtext1">Programmer</p>
-                </div>
-            </div>
-            
-            <ul class="space-y-2">
-                <li>
-                    <a href="#home" class="nav-item active" onclick="navigateToSection('home')">
-                        <i class="fas fa-home"></i>
-                        <span>Home</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#about" class="nav-item" onclick="navigateToSection('about')">
-                        <i class="fas fa-user"></i>
-                        <span>About</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#skills" class="nav-item" onclick="navigateToSection('skills')">
-                        <i class="fas fa-code"></i>
-                        <span>Skills</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#projects" class="nav-item" onclick="navigateToSection('projects')">
-                        <i class="fas fa-folder"></i>
-                        <span>Projects</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-item" onclick="navigateToSection('contact')">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contact</span>
-                    </a>
-                </li>
-            </ul>
-
-            <div class="mt-8 p-4 glassmorphism rounded-lg">
-                <div class="terminal">
-                    <div class="terminal-header">
-                        <div class="terminal-dot" style="background: var(--red);"></div>
-                        <div class="terminal-dot" style="background: var(--yellow);"></div>
-                        <div class="terminal-dot" style="background: var(--green);"></div>
-                    </div>
-                    <div class="terminal-content text-sm">
-                        <span class="text-subtext1">$</span> whoami<span class="terminal-cursor">_</span><br>
-                        Kumar-Vaibhav<br>
-                        <span class="text-subtext1">$</span> echo $PASSION<br>
-                        <span style="color: var(--blue);">System Automation</span><span class="terminal-cursor">_</span>
-                    </div>
-                </div>
-            </div>
+  <!-- Sidebar Navigation -->
+  <nav class="sidebar" id="sidebar">
+    <div class="p-6">
+      <div class="flex items-center mb-8">
+        <img src="assets/IMG_20251012_235615_851.webp" alt="Profile" class="w-16 h-16 rounded-full mr-4">
+        <div>
+          <h2 class="text-lg font-bold gradient-text">ijadux2</h2>
+          <p class="text-sm text-subtext1">Programmer</p>
         </div>
-    </nav>
+      </div>
 
-    <!-- Minimap -->
-    <div class="minimap">
-        <div class="minimap-dot active" onclick="navigateToSection('home')" title="Home"></div>
-        <div class="minimap-dot" onclick="navigateToSection('about')" title="About"></div>
-        <div class="minimap-dot" onclick="navigateToSection('skills')" title="Skills"></div>
-        <div class="minimap-dot" onclick="navigateToSection('projects')" title="Projects"></div>
-        <div class="minimap-dot" onclick="navigateToSection('contact')" title="Contact"></div>
+      <ul class="space-y-2">
+        <li>
+          <a href="#home" class="nav-item active" onclick="navigateToSection('home')">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#about" class="nav-item" onclick="navigateToSection('about')">
+            <i class="fas fa-user"></i>
+            <span>About</span>
+          </a>
+        </li>
+        <li>
+          <a href="#skills" class="nav-item" onclick="navigateToSection('skills')">
+            <i class="fas fa-code"></i>
+            <span>Skills</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-item" onclick="navigateToSection('projects')">
+            <i class="fas fa-folder"></i>
+            <span>Projects</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-item" onclick="navigateToSection('contact')">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="mt-8 p-4 glassmorphism rounded-lg">
+        <div class="terminal">
+          <div class="terminal-header">
+            <div class="terminal-dot" style="background: var(--red);"></div>
+            <div class="terminal-dot" style="background: var(--yellow);"></div>
+            <div class="terminal-dot" style="background: var(--green);"></div>
+          </div>
+          <div class="terminal-content text-sm">
+            <span class="text-subtext1">$</span> whoami<span class="terminal-cursor">_</span><br>
+            Kumar-Vaibhav<br>
+            <span class="text-subtext1">$</span> echo $PASSION<br>
+            <span style="color: var(--blue);">System Automation</span><span class="terminal-cursor">_</span>
+          </div>
+        </div>
+      </div>
     </div>
+  </nav>
 
-    <!-- Main Content -->
-    <main class="ml-0 md:ml-80">
-        <!-- Home Section -->
-        <section id="home" class="section">
-            <div class="max-w-4xl mx-auto text-center">
-                <div class="floating">
-                    <img src="assets/IMG_20251012_235615_851.webp" alt="Profile" class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-surface0 shadow-2xl">
-                </div>
-                <h1 class="text-6xl font-bold mb-4 neon-glow gradient-text">
-                    Kumar-Vaibhav
-                </h1>
-                <p class="text-2xl text-subtext1 mb-8">System Programmer & Automation Expert</p>
-                <div class="flex justify-center space-x-6">
-                    <a href="https://github.com/ijadux2" class="text-3xl text-blue hover:text-lavender transition-colors">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="mailto:kv26102009@gmail.com" class="text-3xl text-green hover:text-teal transition-colors">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
+  <!-- Minimap -->
+  <div class="minimap">
+    <div class="minimap-dot active" onclick="navigateToSection('home')" title="Home"></div>
+    <div class="minimap-dot" onclick="navigateToSection('about')" title="About"></div>
+    <div class="minimap-dot" onclick="navigateToSection('skills')" title="Skills"></div>
+    <div class="minimap-dot" onclick="navigateToSection('projects')" title="Projects"></div>
+    <div class="minimap-dot" onclick="navigateToSection('contact')" title="Contact"></div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="ml-0 md:ml-80">
+    <!-- Home Section -->
+    <section id="home" class="section">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="floating">
+          <img src="assets/IMG_20251012_235615_851.webp" alt="Profile"
+            class="w-48 h-48 rounded-full mx-auto mb-8 border-4 border-surface0 shadow-2xl">
+        </div>
+        <h1 class="text-6xl font-bold mb-4 neon-glow gradient-text">
+          Kumar-Vaibhav
+        </h1>
+        <p class="text-2xl text-subtext1 mb-8">System Programmer & Automation Expert</p>
+        <div class="flex justify-center space-x-6">
+          <a href="https://github.com/ijadux2" class="text-3xl text-blue hover:text-lavender transition-colors">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:kv26102009@gmail.com" class="text-3xl text-green hover:text-teal transition-colors">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="max-w-4xl mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-center gradient-text">About Me</h2>
+        <div class="glassmorphism rounded-xl p-8">
+          <p class="text-lg text-subtext1 leading-relaxed">
+            I'm a passionate programmer with expertise in system scripting and configuration management.
+            I enjoy building efficient tools and automating workflows. My journey involves exploring the
+            depths of Linux systems, creating custom desktop environments, and developing tools that make
+            life easier for fellow developers.
+          </p>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
+            <div class="text-center">
+              <i class="fas fa-terminal text-3xl text-blue mb-3"></i>
+              <h3 class="font-semibold mb-2">CLI Enthusiast</h3>
+              <p class="text-subtext1 text-sm">Love working in the terminal and building command-line tools</p>
             </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-4xl font-bold mb-8 text-center gradient-text">About Me</h2>
-                <div class="glassmorphism rounded-xl p-8">
-                    <p class="text-lg text-subtext1 leading-relaxed">
-                        I'm a passionate programmer with expertise in system scripting and configuration management. 
-                        I enjoy building efficient tools and automating workflows. My journey involves exploring the 
-                        depths of Linux systems, creating custom desktop environments, and developing tools that make 
-                        life easier for fellow developers.
-                    </p>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
-                        <div class="text-center">
-                            <i class="fas fa-terminal text-3xl text-blue mb-3"></i>
-                            <h3 class="font-semibold mb-2">CLI Enthusiast</h3>
-                            <p class="text-subtext1 text-sm">Love working in the terminal and building command-line tools</p>
-                        </div>
-                        <div class="text-center">
-                            <i class="fas fa-cog text-3xl text-mauve mb-3"></i>
-                            <h3 class="font-semibold mb-2">Configuration Master</h3>
-                            <p class="text-subtext1 text-sm">Specialized in system configuration and dotfile management</p>
-                        </div>
-                        <div class="text-center">
-                            <i class="fas fa-rocket text-3xl text-green mb-3"></i>
-                            <h3 class="font-semibold mb-2">Automation Expert</h3>
-                            <p class="text-subtext1 text-sm">Creating scripts and tools to automate repetitive tasks</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="text-center">
+              <i class="fas fa-cog text-3xl text-mauve mb-3"></i>
+              <h3 class="font-semibold mb-2">Configuration Master</h3>
+              <p class="text-subtext1 text-sm">Specialized in system configuration and dotfile management</p>
             </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="section">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Skills</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="skill-card glassmorphism rounded-xl p-6 text-center">
-                        <div class="skill-icon text-red">🐚</div>
-                        <h3 class="text-xl font-bold mb-2 text-red">Bash</h3>
-                        <p class="text-subtext1">Shell scripting for automation and system administration</p>
-                    </div>
-                    <div class="skill-card glassmorphism rounded-xl p-6 text-center">
-                        <div class="skill-icon text-mauve">🐧</div>
-                        <h3 class="text-xl font-bold mb-2 text-mauve">Nix</h3>
-                        <p class="text-subtext1">Declarative package management and reproducible builds</p>
-                    </div>
-                    <div class="skill-card glassmorphism rounded-xl p-6 text-center">
-                        <div class="skill-icon text-yellow">🌙</div>
-                        <h3 class="text-xl font-bold mb-2 text-yellow">Lua</h3>
-                        <p class="text-subtext1">Lightweight scripting for embedded systems and extensions</p>
-                    </div>
-                    <div class="skill-card glassmorphism rounded-xl p-6 text-center">
-                        <div class="skill-icon text-green">🐍</div>
-                        <h3 class="text-xl font-bold mb-2 text-green">Python</h3>
-                        <p class="text-subtext1">Versatile programming for web, data, and automation tasks</p>
-                    </div>
-                    <div class="skill-card glassmorphism rounded-xl p-6 text-center">
-                        <div class="skill-icon text-blue">🐧</div>
-                        <h3 class="text-xl font-bold mb-2 text-blue">Linux</h3>
-                        <p class="text-subtext1">Expertise in Linux systems, distributions, and command-line proficiency</p>
-                    </div>
-                    <div class="skill-card glassmorphism rounded-xl p-6 text-center">
-                        <div class="skill-icon text-rosewater">🪟</div>
-                        <h3 class="text-xl font-bold mb-2 text-rosewater">Window Manager Decorator</h3>
-                        <p class="text-subtext1">Customizing desktop environments with compositors and window managers like Hyprland</p>
-                    </div>
-                </div>
+            <div class="text-center">
+              <i class="fas fa-rocket text-3xl text-green mb-3"></i>
+              <h3 class="font-semibold mb-2">Automation Expert</h3>
+              <p class="text-subtext1 text-sm">Creating scripts and tools to automate repetitive tasks</p>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- Projects Section -->
-        <section id="projects" class="section">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Projects</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <div class="project-card glassmorphism rounded-xl p-6">
-                        <img src="assets/neovim.png" alt="Neovim" class="w-16 h-16 mx-auto mb-4 rounded">
-                        <h3 class="text-xl font-bold mb-2 text-blue">Neovim Customizations</h3>
-                        <p class="text-subtext1 mb-4">Building Neovim with Lazy for a good code editor for Linux</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-surface2">Configuration</span>
-                            <span class="text-xs text-overlay2">⭐ Featured</span>
-                        </div>
-                    </div>
-                    <div class="project-card glassmorphism rounded-xl p-6">
-                        <img src="assets/fedoar.jpeg" alt="Fedora" class="w-16 h-16 mx-auto mb-4 rounded">
-                        <h3 class="text-xl font-bold mb-2 text-mauve">Hyprland Ricing</h3>
-                        <p class="text-subtext1 mb-4">Configure Hyprland for a good Desktop-Manager for Linux</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-surface2">Desktop Environment</span>
-                            <span class="text-xs text-overlay2">🎨 Custom</span>
-                        </div>
-                    </div>
-                    <div class="project-card glassmorphism rounded-xl p-6">
-                        <img src="assets/bspwm.jpeg" alt="BSPWM" class="w-16 h-16 mx-auto mb-4 rounded">
-                        <h3 class="text-xl font-bold mb-2 text-yellow">Building Tools</h3>
-                        <p class="text-subtext1 mb-4">Building tools in bash for better usage for Linux</p>
-                        <div class="flex justify-between items-center">
-                            <span class="text-sm text-surface2">CLI Tools</span>
-                            <span class="text-xs text-overlay2">🔧 Utility</span>
-                        </div>
-                    </div>
-                </div>
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="skill-card glassmorphism rounded-xl p-6 text-center">
+            <div class="skill-icon text-red">🐚</div>
+            <h3 class="text-xl font-bold mb-2 text-red">Bash</h3>
+            <p class="text-subtext1">Shell scripting for automation and system administration</p>
+          </div>
+          <div class="skill-card glassmorphism rounded-xl p-6 text-center">
+            <div class="skill-icon text-mauve">🐧</div>
+            <h3 class="text-xl font-bold mb-2 text-mauve">Nix</h3>
+            <p class="text-subtext1">Declarative package management and reproducible builds</p>
+          </div>
+          <div class="skill-card glassmorphism rounded-xl p-6 text-center">
+            <div class="skill-icon text-yellow">🌙</div>
+            <h3 class="text-xl font-bold mb-2 text-yellow">Lua</h3>
+            <p class="text-subtext1">Lightweight scripting for embedded systems and extensions</p>
+          </div>
+          <div class="skill-card glassmorphism rounded-xl p-6 text-center">
+            <div class="skill-icon text-green">🐍</div>
+            <h3 class="text-xl font-bold mb-2 text-green">Python</h3>
+            <p class="text-subtext1">Versatile programming for web, data, and automation tasks</p>
+          </div>
+          <div class="skill-card glassmorphism rounded-xl p-6 text-center">
+            <div class="skill-icon text-blue">🐧</div>
+            <h3 class="text-xl font-bold mb-2 text-blue">Linux</h3>
+            <p class="text-subtext1">Expertise in Linux systems, distributions, and command-line proficiency</p>
+          </div>
+          <div class="skill-card glassmorphism rounded-xl p-6 text-center">
+            <div class="skill-icon text-rosewater">🪟</div>
+            <h3 class="text-xl font-bold mb-2 text-rosewater">Window Manager Decorator</h3>
+            <p class="text-subtext1">Customizing desktop environments with compositors and window managers like Hyprland
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-4xl font-bold mb-8 text-center gradient-text">Projects</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="project-card glassmorphism rounded-xl p-6">
+            <img src="assets/neovim.png" alt="Neovim" class="w-16 h-16 mx-auto mb-4 rounded">
+            <h3 class="text-xl font-bold mb-2 text-blue">Neovim Customizations</h3>
+            <p class="text-subtext1 mb-4">Building Neovim with Lazy for a good code editor for Linux</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-surface2">Configuration</span>
+              <span class="text-xs text-overlay2">⭐ Featured</span>
             </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="text-4xl font-bold mb-8 gradient-text">Get In Touch</h2>
-                <div class="glassmorphism rounded-xl p-8">
-                    <p class="text-lg text-subtext1 mb-6">Let's connect and collaborate on exciting projects!</p>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="text-center">
-                            <i class="fas fa-envelope text-3xl text-green mb-3"></i>
-                            <h3 class="font-semibold mb-2">Email</h3>
-                            <a href="mailto:kv26102009@gmail.com" class="text-blue hover:text-lavender transition-colors">
-                                kv26102009@gmail.com
-                            </a>
-                        </div>
-                        <div class="text-center">
-                            <i class="fab fa-github text-3xl text-blue mb-3"></i>
-                            <h3 class="font-semibold mb-2">GitHub</h3>
-                            <a href="https://github.com/ijadux2" class="text-blue hover:text-lavender transition-colors">
-                                github.com/ijadux2
-                            </a>
-                        </div>
-                    </div>
-                    <div class="mt-8">
-                        <a href="github.html" class="inline-flex items-center px-6 py-3 bg-blue hover:bg-lavender text-white rounded-lg transition-colors">
-                            <i class="fas fa-code-branch mr-2"></i>
-                            View My Repositories
-                        </a>
-                    </div>
-                </div>
+          </div>
+          <div class="project-card glassmorphism rounded-xl p-6">
+            <img src="assets/fedoar.jpeg" alt="Fedora" class="w-16 h-16 mx-auto mb-4 rounded">
+            <h3 class="text-xl font-bold mb-2 text-mauve">Hyprland Ricing</h3>
+            <p class="text-subtext1 mb-4">Configure Hyprland for a good Desktop-Manager for Linux</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-surface2">Desktop Environment</span>
+              <span class="text-xs text-overlay2">🎨 Custom</span>
             </div>
-        </section>
-    </main>
+          </div>
+          <div class="project-card glassmorphism rounded-xl p-6">
+            <img src="assets/bspwm.jpeg" alt="BSPWM" class="w-16 h-16 mx-auto mb-4 rounded">
+            <h3 class="text-xl font-bold mb-2 text-yellow">Building Tools</h3>
+            <p class="text-subtext1 mb-4">Building tools in bash for better usage for Linux</p>
+            <div class="flex justify-between items-center">
+              <span class="text-sm text-surface2">CLI Tools</span>
+              <span class="text-xs text-overlay2">🔧 Utility</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <script>
-        // Initialize
-        document.addEventListener('DOMContentLoaded', function() {
-            // Auto-open sidebar on desktop
-            if (window.innerWidth > 768) {
-                document.getElementById('sidebar').classList.add('active');
-            }
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+      <div class="max-w-4xl mx-auto text-center">
+        <h2 class="text-4xl font-bold mb-8 gradient-text">Get In Touch</h2>
+        <div class="glassmorphism rounded-xl p-8">
+          <p class="text-lg text-subtext1 mb-6">Let's connect and collaborate on exciting projects!</p>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="text-center">
+              <i class="fas fa-envelope text-3xl text-green mb-3"></i>
+              <h3 class="font-semibold mb-2">Email</h3>
+              <a href="mailto:kv26102009@gmail.com" class="text-blue hover:text-lavender transition-colors">
+                kv26102009@gmail.com
+              </a>
+            </div>
+            <div class="text-center">
+              <i class="fab fa-github text-3xl text-blue mb-3"></i>
+              <h3 class="font-semibold mb-2">GitHub</h3>
+              <a href="https://github.com/ijadux2" class="text-blue hover:text-lavender transition-colors">
+                github.com/ijadux2
+              </a>
+            </div>
+          </div>
+          <div class="mt-8">
+            <a href="github.html"
+              class="inline-flex items-center px-6 py-3 bg-blue hover:bg-lavender text-white rounded-lg transition-colors">
+              <i class="fas fa-code-branch mr-2"></i>
+              View My Repositories
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-            // Initial animations
+  <script>
+    // Initialize
+    document.addEventListener('DOMContentLoaded', function () {
+      // Auto-open sidebar on desktop
+      if (window.innerWidth > 768) {
+        document.getElementById('sidebar').classList.add('active');
+      }
+
+      // Initial animations
+      anime({
+        targets: '#home h1',
+        translateY: [-50, 0],
+        opacity: [0, 1],
+        duration: 1200,
+        easing: 'easeOutExpo'
+      });
+
+      // Scroll animations for sections
+      animateOnScroll();
+    });
+
+    // Toggle sidebar for mobile
+    function toggleSidebar() {
+      const sidebar = document.getElementById('sidebar');
+      sidebar.classList.toggle('active');
+    }
+
+    // Navigate to section
+    function navigateToSection(sectionId) {
+      const section = document.getElementById(sectionId);
+      section.scrollIntoView({behavior: 'smooth'});
+
+      // Update active nav items
+      document.querySelectorAll('.nav-item').forEach(item => {
+        item.classList.remove('active');
+      });
+      document.querySelector(`[href="#${sectionId}"]`).classList.add('active');
+
+      // Update minimap
+      document.querySelectorAll('.minimap-dot').forEach(dot => {
+        dot.classList.remove('active');
+      });
+      const dotIndex = ['home', 'about', 'skills', 'projects', 'contact'].indexOf(sectionId);
+      if (dotIndex !== -1) {
+        document.querySelectorAll('.minimap-dot')[dotIndex].classList.add('active');
+      }
+
+      // Close mobile sidebar
+      if (window.innerWidth <= 768) {
+        document.getElementById('sidebar').classList.remove('active');
+      }
+    }
+
+    // Scroll-based animations
+    function animateOnScroll() {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
             anime({
-                targets: '#home h1',
-                translateY: [-50, 0],
-                opacity: [0, 1],
-                duration: 1200,
-                easing: 'easeOutExpo'
+              targets: entry.target.querySelectorAll('.skill-card, .project-card'),
+              scale: [0.8, 1],
+              opacity: [0, 1],
+              delay: anime.stagger(100),
+              duration: 600,
+              easing: 'easeOutExpo'
             });
-
-            // Scroll animations for sections
-            animateOnScroll();
+          }
         });
+      }, {threshold: 0.1});
 
-        // Toggle sidebar for mobile
-        function toggleSidebar() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.classList.toggle('active');
+      document.querySelectorAll('#skills, #projects').forEach(section => {
+        observer.observe(section);
+      });
+    }
+
+    // Update active section on scroll
+    window.addEventListener('scroll', function () {
+      const sections = ['home', 'about', 'skills', 'projects', 'contact'];
+      const scrollPosition = window.scrollY + 100;
+
+      sections.forEach((sectionId, index) => {
+        const section = document.getElementById(sectionId);
+        if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
+          // Update nav
+          document.querySelectorAll('.nav-item').forEach(item => {
+            item.classList.remove('active');
+          });
+          document.querySelector(`[href="#${sectionId}"]`)?.classList.add('active');
+
+          // Update minimap
+          document.querySelectorAll('.minimap-dot').forEach(dot => {
+            dot.classList.remove('active');
+          });
+          document.querySelectorAll('.minimap-dot')[index]?.classList.add('active');
         }
+      });
+    });
 
-        // Navigate to section
-        function navigateToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            section.scrollIntoView({ behavior: 'smooth' });
-            
-            // Update active nav items
-            document.querySelectorAll('.nav-item').forEach(item => {
-                item.classList.remove('active');
-            });
-            document.querySelector(`[href="#${sectionId}"]`).classList.add('active');
-            
-            // Update minimap
-            document.querySelectorAll('.minimap-dot').forEach(dot => {
-                dot.classList.remove('active');
-            });
-            const dotIndex = ['home', 'about', 'skills', 'projects', 'contact'].indexOf(sectionId);
-            if (dotIndex !== -1) {
-                document.querySelectorAll('.minimap-dot')[dotIndex].classList.add('active');
-            }
-
-            // Close mobile sidebar
-            if (window.innerWidth <= 768) {
-                document.getElementById('sidebar').classList.remove('active');
-            }
-        }
-
-        // Scroll-based animations
-        function animateOnScroll() {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        anime({
-                            targets: entry.target.querySelectorAll('.skill-card, .project-card'),
-                            scale: [0.8, 1],
-                            opacity: [0, 1],
-                            delay: anime.stagger(100),
-                            duration: 600,
-                            easing: 'easeOutExpo'
-                        });
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll('#skills, #projects').forEach(section => {
-                observer.observe(section);
-            });
-        }
-
-        // Update active section on scroll
-        window.addEventListener('scroll', function() {
-            const sections = ['home', 'about', 'skills', 'projects', 'contact'];
-            const scrollPosition = window.scrollY + 100;
-
-            sections.forEach((sectionId, index) => {
-                const section = document.getElementById(sectionId);
-                if (section.offsetTop <= scrollPosition && section.offsetTop + section.offsetHeight > scrollPosition) {
-                    // Update nav
-                    document.querySelectorAll('.nav-item').forEach(item => {
-                        item.classList.remove('active');
-                    });
-                    document.querySelector(`[href="#${sectionId}"]`)?.classList.add('active');
-                    
-                    // Update minimap
-                    document.querySelectorAll('.minimap-dot').forEach(dot => {
-                        dot.classList.remove('active');
-                    });
-                    document.querySelectorAll('.minimap-dot')[index]?.classList.add('active');
-                }
-            });
+    // Hover effects for cards
+    document.querySelectorAll('.skill-card, .project-card').forEach(card => {
+      card.addEventListener('mouseenter', () => {
+        anime({
+          targets: card,
+          scale: 1.05,
+          duration: 300,
+          easing: 'easeOutExpo'
         });
+      });
 
-        // Hover effects for cards
-        document.querySelectorAll('.skill-card, .project-card').forEach(card => {
-            card.addEventListener('mouseenter', () => {
-                anime({
-                    targets: card,
-                    scale: 1.05,
-                    duration: 300,
-                    easing: 'easeOutExpo'
-                });
-            });
-
-            card.addEventListener('mouseleave', () => {
-                anime({
-                    targets: card,
-                    scale: 1,
-                    duration: 300,
-                    easing: 'easeOutExpo'
-                });
-            });
+      card.addEventListener('mouseleave', () => {
+        anime({
+          targets: card,
+          scale: 1,
+          duration: 300,
+          easing: 'easeOutExpo'
         });
+      });
+    });
 
-        // Responsive behavior
-        window.addEventListener('resize', function() {
-            const sidebar = document.getElementById('sidebar');
-            if (window.innerWidth > 768) {
-                sidebar.classList.add('active');
-            } else {
-                sidebar.classList.remove('active');
-            }
-        });
-    </script>
+    // Responsive behavior
+    window.addEventListener('resize', function () {
+      const sidebar = document.getElementById('sidebar');
+      if (window.innerWidth > 768) {
+        sidebar.classList.add('active');
+      } else {
+        sidebar.classList.remove('active');
+      }
+    });
+  </script>
 </body>
+
 </html>
