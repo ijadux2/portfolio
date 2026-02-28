@@ -20,7 +20,7 @@ home = ["HTML", "RSS", "JSON"]
 [params]
 author = "Ijadux2"
 description = "My personal portfolio website"
-navbar_title = "Ijad's Portfolio"
+navbar_title = "ijadux2 Portfolio"
 footer = "Copyright © 2025 by Ijadux2"
 color_scheme = "dark"
 enable_toc = true
