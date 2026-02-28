@@ -2,7 +2,6 @@
 title: "Home"
 description: "Welcome to my portfolio"
 layout: "home"
-menu: navbar
 ---
 
 # Hello, I'm Kumar Vaibhav
