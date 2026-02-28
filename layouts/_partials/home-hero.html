@@ -178,7 +178,7 @@
   <!-- Profile Section -->
   <div class="profile-section">
     {{ if .Site.Params.profile.image }}
-    <img src="{{ .Site.Params.profile.image }}" alt="{{ .Site.Params.profile.name | default "Kumar Vaibhav" }}" class="profile-img">
+    <img src="/{{ .Site.Params.profile.image }}" alt="{{ .Site.Params.profile.name | default "Kumar Vaibhav" }}" class="profile-img">
     {{ end }}
     <h1 class="profile-name">{{ .Site.Params.profile.name | default "Kumar Vaibhav" }}</h1>
     <p class="profile-tagline">{{ .Site.Params.profile.tagline | default "System Programmer & Automation Expert" }}</p>
