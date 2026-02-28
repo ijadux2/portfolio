@@ -72,11 +72,11 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://nainablog.vercel.app/posts/browser/</loc>
+    <loc>https://nainablog.vercel.app/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://nainablog.vercel.app/about/</loc>
+    <loc>https://nainablog.vercel.app/posts/browser/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>

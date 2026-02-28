@@ -6,8 +6,11 @@ print() {
 
 # hugo build
 
-print "building the project ..."
-hugo
+project="$HOME/codespace/portfolio/"
+
+cd $project ||
+  print "building the project ..."
+command hugo
 
 print "adding the build files to git .."
 git add .
