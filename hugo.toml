@@ -27,6 +27,16 @@ enable_toc = true
 toc_position = "right"
 enable_site_search = true
 
+[params.profile]
+enabled = true
+image = "images/profile.jpg"
+name = "Kumar Vaibhav"
+tagline = "System Programmer & Automation Expert"
+
+[params.social]
+github = "ijadux2"
+email = "kv26102009@gmail.com"
+
 [params.list_layout]
 enable_group_by_year = true
 enable_show_date = true

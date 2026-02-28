@@ -26,12 +26,14 @@
 
 <!DOCTYPE html>
 <html lang='en'><head>
-	<meta name="generator" content="Hugo 0.156.0"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=33315&amp;path=livereload" data-no-instant defer></script>
+	<meta name="generator" content="Hugo 0.156.0">
     <meta charset="utf-8">
-    <link rel="shortcut icon" href='http://localhost:33315/favicon.ico' type="image/x-icon">
+    <link rel="shortcut icon" href='https://nainablog.vercel.app/favicon.ico' type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Ijad&#39;s Portfolio</title>
 
+    
+    <meta name="description" content="Welcome to my portfolio" />
     
 
     
@@ -41,10 +43,10 @@
     
 
     
-        <meta property="og:url" content="http://localhost:33315/">
+        <meta property="og:url" content="https://nainablog.vercel.app/">
   <meta property="og:site_name" content="Ijad&#39;s Portfolio">
-  <meta property="og:title" content="Ijad&#39;s Portfolio">
-  <meta property="og:description" content="My personal portfolio website">
+  <meta property="og:title" content="Home">
+  <meta property="og:description" content="Welcome to my portfolio">
   <meta property="og:locale" content="en">
   <meta property="og:type" content="website">
 
@@ -53,10 +55,10 @@
     
         
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Ijad&#39;s Portfolio">
-  <meta name="twitter:description" content="My personal portfolio website">
+  <meta name="twitter:title" content="Home">
+  <meta name="twitter:description" content="Welcome to my portfolio">
 
-    <link rel="stylesheet" href="/style.css" integrity="">
+    <link rel="stylesheet" href="/style.min.77e298e9a130a60f6e176e07bb09ff971b8b648e5087248d839699aa01eeb80a.css" integrity="sha256-d&#43;KY6aEwpg9uF24Huwn/lxuLZI5QhySNg5aZqgHuuAo=">
 
 
 
@@ -74,17 +76,17 @@
             document.documentElement.setAttribute("data-theme", "light");
         }
     </script>
-<script defer src="/js/theme-switch.js" integrity=""></script>
+<script defer src="/js/theme-switch.7c57075675400a1a12bc3fcfc744dd74e1e417b8db11fdef378d7a7ef1cc9e3f.js" integrity="sha256-fFcHVnVAChoSvD/Px0TddOHkF7jbEf3vN416fvHMnj8="></script>
 
 
 
-    <script defer src="/js/hide-navbar-on-scroll.js" integrity=""></script>
+    <script defer src="/js/hide-navbar-on-scroll.b5f3414715b82a9bc2c9086fc860ad5d0a63f67251e4dd4fa61e9dfce91ebdb6.js" integrity="sha256-tfNBRxW4KpvCyQhvyGCtXQpj9nJR5N1Pph6d/OkevbY="></script>
 
 
 
 
 
-    <script defer src="/js/zooming.js" integrity=""></script>
+    <script defer src="/js/zooming.10d718ecdb4a98eab370ed60963ea87f1c612ac225609eadc52f0e536bc1517c.js" integrity="sha256-ENcY7NtKmOqzcO1glj6ofxxhKsIlYJ6txS8OU2vBUXw="></script>
 
 
 
@@ -97,7 +99,7 @@
     
     
     
-    <script defer src="/js/search-en.js" integrity=""></script>
+    <script defer src="/js/search-en.3ac7e839340496711482c94bb8565664fc8c429f638f32eebad00b1a0212e362.js" integrity="sha256-OsfoOTQElnEUgslLuFZWZPyMQp9jjzLuutALGgIS42I="></script>
 
 
 
@@ -220,144 +222,404 @@
             <div id="content" class="content-margin">
                 
 
+<style>
+  .home-hero {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .profile-section {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color, #89b4fa);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    margin-bottom: 1.5rem;
+  }
+  
+  .profile-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, #89b4fa, #b4befe, #cba6f7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .profile-tagline {
+    font-size: 1.25rem;
+    color: var(--text-color, #cdd6f4);
+    opacity: 0.8;
+    margin-bottom: 1.5rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .social-link {
+    font-size: 1.75rem;
+    color: var(--text-color, #cdd6f4);
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #89b4fa;
+    transform: scale(1.1);
+  }
+  
+  .content-section {
+    margin-bottom: 2rem;
+  }
+  
+  .content-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color, #313244);
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    margin: 1rem 0;
+  }
+  
+  .skill-item {
+    background: var(--surface-0, #313244);
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid var(--surface-1, #45475a);
+    transition: all 0.3s ease;
+  }
+  
+  .skill-item:hover {
+    transform: translateY(-3px);
+    border-color: #89b4fa;
+  }
+  
+     display: grid .projects-grid {
+;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 1rem 0;
+  }
+  
+  .project-card {
+    background: var(--surface-0, #313244);
+    padding: 1.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--surface-1, #45475a);
+    transition: all 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    border-color: #89b4fa;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .project-card h3 {
+    color: #89b4fa;
+    margin-bottom: 0.5rem;
+  }
+  
+  .project-card p {
+    color: var(--text-color, #cdd6f4);
+    opacity: 0.8;
+    font-size: 0.9rem;
+  }
+  
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+  
+  .contact-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: #89b4fa;
+    color: #11111b;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-link:hover {
+    background: #b4befe;
+    transform: scale(1.05);
+  }
+  
+  .terminal-box {
+    background: #11111b;
+    border: 1px solid #313244;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+    font-family: monospace;
+  }
+  
+  .terminal-header {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+  
+  .terminal-dot.red { background: #f38ba8; }
+  .terminal-dot.yellow { background: #f9e2af; }
+  .terminal-dot.green { background: #a6e3a1; }
+  
+  .terminal-content {
+    color: #a6e3a1;
+  }
+</style>
 
+<div class="home-hero">
+  
+  <div class="profile-section">
+    
+    <img src="images/profile.jpg" alt="Kumar Vaibhav" class="profile-img">
+    
+    <h1 class="profile-name">Kumar Vaibhav</h1>
+    <p class="profile-tagline">System Programmer &amp; Automation Expert</p>
+    <div class="social-links">
+      
+      <a href="https://github.com/ijadux2" class="social-link" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+      
+      
+      <a href="mailto:kv26102009@gmail.com" class="social-link">
+        <i class="fas fa-envelope"></i>
+      </a>
+      
+    </div>
+  </div>
 
+  
+  <div class="content-section">
+    <!-- end-chunk -->
+<!-- begin-chunk data-anchor="hello-im-kumar-vaibhav" -->
 
+<h1 class="header-anchor-wrapper">Hello, I&rsquo;m Kumar Vaibhav
+  <a href="#hello-im-kumar-vaibhav" class="header-anchor-link">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
 
+</a>
+</h1>
 
-<div class="postcard-layout content-margin">
-    
-        <a href="http://localhost:33315/posts/future/">
-            <div class="postcard-item">
-                <div class="postcard-title">
-                    <span>Future</span>
-                </div>
-                <div class="postcard-summary">
-                    <span> Beyond the Stethoscope: Why I’m Choosing Code Over Clinicals In the landscape of a traditional Indian household, career paths often feel like a binary choice: 0 (Doctor) or 1 (Engineer). For as long as I can remember, the &ldquo;expected&rdquo; path for me was the one leading to a medical degree. But while the world saw me in a white coat, I was busy staring at a terminal screen, falling in love with the logic of syntax and the thrill of a successful build.
-</span>
-                </div>
-                <div class="postcard-metadata">
-                    <span>2026/02/28 · 
-    
-        
-    
+<p>I&rsquo;m a passionate programmer with expertise in system scripting and configuration management. I enjoy building efficient tools and automating workflows.</p>
+<!-- end-chunk -->
+<!-- begin-chunk data-anchor="about-me" -->
 
-    
-        
-            <span>Posts</span>
-        
-    
-</span>
-                </div>
-            </div>
-        </a>
-    
-        <a href="http://localhost:33315/posts/window-manager/">
-            <div class="postcard-item">
-                <div class="postcard-title">
-                    <span>Window Manager</span>
-                </div>
-                <div class="postcard-summary">
-                    <span> Hyprland and Sway i like both of them and personaly i like hyprland not because of large community but for a good wayland compositor with in built blur and decoration.
-and for sway i like it minimalism no heary dependencies ready in 20 to 30 mins
-Hyprland vs. Sway: The Wayland Showdown If you are moving away from X11, you are likely looking at these two powerhouses. Both are Tiling Window Managers (TWMs) built for Wayland, but they offer very different philosophies for your desktop experience.
-</span>
-                </div>
-                <div class="postcard-metadata">
-                    <span>2026/02/28 · 
-    
-        
-    
+<h2 class="header-anchor-wrapper">About Me
+  <a href="#about-me" class="header-anchor-link">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
 
-    
-        
-            <span>Posts</span>
-        
-    
-</span>
-                </div>
-            </div>
-        </a>
-    
-        <a href="http://localhost:33315/posts/my-new-post/">
-            <div class="postcard-item">
-                <div class="postcard-title">
-                    <span>Neovim and journey of coding</span>
-                </div>
-                <div class="postcard-summary">
-                    <span> Neovim i use neovim for most for the time in my laptop. using archlinux with Noctalia shell, custome plugins and config
-Sharingan.nvim
-my neovim consist of
-plugin managaer theme {catppuccin-mocha} my custome plugins {git,app-launcher,tangle,etc} github plugins
-my fav. snacks.nvim and many more just not becasue of plugins i like neovim i like becasue of speed and terminal based editor
-my coding journey when i was introduced by linux in 2020 it was hard for me to use
-</span>
-                </div>
-                <div class="postcard-metadata">
-                    <span>2026/02/28 · 
-    
-        
-    
+</a>
+</h2>
 
-    
-        
-            <span>Posts</span>
-        
-    
-</span>
-                </div>
-            </div>
-        </a>
-    
-        <a href="http://localhost:33315/posts/first-post/">
-            <div class="postcard-item">
-                <div class="postcard-title">
-                    <span>Welcome to My Portfolio</span>
-                </div>
-                <div class="postcard-summary">
-                    <span> Welcome This is my first post on my Hugo portfolio website.
-Getting Started Here&rsquo;s how you can set up your own Hugo site:
-</span>
-                </div>
-                <div class="postcard-metadata">
-                    <span>2024/01/01 · 
-    
-        
-    
+<ul>
+<li>💻 Using Neovim as my main editor<br>
+Linux user since - 🐧2020</li>
+<li>🔧 Building custom configurations and sharing them</li>
+</ul>
+<!-- end-chunk -->
+<!-- begin-chunk data-anchor="skills" -->
 
-    
-        
-            <span>Posts</span>
-        
-    
-</span>
-                </div>
-            </div>
-        </a>
-    
-        <a href="http://localhost:33315/about/">
-            <div class="postcard-item">
-                <div class="postcard-title">
-                    <span>About Me</span>
-                </div>
-                <div class="postcard-summary">
-                    <span> About Me Hi! I&rsquo;m a developer who loves coding and open source.
-My Setup OS: Arch Linux Editor: Neovim Shell: Zsh with Oh-My-Zsh Interests Open source software Linux customization Coding in Lua, Bash, Zig </span>
-                </div>
-                <div class="postcard-metadata">
-                    <span>0001/01/01 · 
-    
+<h2 class="header-anchor-wrapper">Skills
+  <a href="#skills" class="header-anchor-link">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
 
-    
-</span>
-                </div>
-            </div>
-        </a>
-    
-    
+</a>
+</h2>
+
+<ul>
+<li><strong>Bash</strong> - Shell scripting for automation</li>
+<li><strong>Lua</strong> - Neovim plugin development</li>
+<li><strong>Python</strong> - Versatile programming</li>
+<li><strong>Linux</strong> - System administration</li>
+<li><strong>Nix</strong> - Declarative package management</li>
+<li><strong>Window Managers</strong> - Hyprland, BSPWM, Sway</li>
+</ul>
+<!-- end-chunk -->
+<!-- begin-chunk data-anchor="projects" -->
+
+<h2 class="header-anchor-wrapper">Projects
+  <a href="#projects" class="header-anchor-link">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</a>
+</h2>
+
+<!-- end-chunk -->
+<!-- begin-chunk data-anchor="neovim-customizations" -->
+
+<h3 class="header-anchor-wrapper">Neovim Customizations
+  <a href="#neovim-customizations" class="header-anchor-link">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</a>
+</h3>
+
+<p>Building Neovim with Lazy for a good code editor for Linux</p>
+<!-- end-chunk -->
+<!-- begin-chunk data-anchor="hyprland-ricing" -->
+
+<h3 class="header-anchor-wrapper">Hyprland Ricing
+  <a href="#hyprland-ricing" class="header-anchor-link">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</a>
+</h3>
+
+<p>Configure Hyprland for a good Desktop Manager for Linux</p>
+<!-- end-chunk -->
+<!-- begin-chunk data-anchor="building-tools" -->
+
+<h3 class="header-anchor-wrapper">Building Tools
+  <a href="#building-tools" class="header-anchor-link">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</a>
+</h3>
+
+<p>Building tools in bash for better usage for Linux</p>
+<!-- end-chunk -->
+<!-- begin-chunk data-anchor="contact" -->
+
+<h2 class="header-anchor-wrapper">Contact
+  <a href="#contact" class="header-anchor-link">
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="1rem" height="1rem" viewBox="0 0 24 24" fill="none"
+    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+    stroke-linejoin="round">
+    <line x1="4" y1="9" x2="20" y2="9"></line><line x1="4" y1="15" x2="20" y2="15"></line><line x1="10" y1="3" x2="8" y2="21"></line><line x1="16" y1="3" x2="14" y2="21"></line>
+</svg>
+
+</a>
+</h2>
+
+<ul>
+<li>📧 <a href="mailto:kv26102009@gmail.com">kv26102009@gmail.com</a></li>
+<li>💻 <a href="https://github.com/ijadux2">github.com/ijadux2</a></li>
+</ul>
+
+  </div>
+  
+
+  
+  <div class="content-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-item">🐚 Bash</div>
+      <div class="skill-item">🌙 Lua</div>
+      <div class="skill-item">🐍 Python</div>
+      <div class="skill-item">🐧 Linux</div>
+      <div class="skill-item">❄️ Nix</div>
+      <div class="skill-item">🪟 Hyprland</div>
+    </div>
+  </div>
+
+  
+  <div class="content-section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Neovim Config</h3>
+        <p>Custom Neovim configuration with plugins and settings</p>
+      </div>
+      <div class="project-card">
+        <h3>Hyprland Dots</h3>
+        <p>Configuration files for Hyprland window manager</p>
+      </div>
+      <div class="project-card">
+        <h3>Forge</h3>
+        <p>Collection of custom scripts for system automation</p>
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="content-section">
+    <h2>Get In Touch</h2>
+    <div class="contact-links">
+      <a href="mailto:kv26102009@gmail.com" class="contact-link">
+        <i class="fas fa-envelope"></i> Email
+      </a>
+      <a href="https://github.com/ijadux2" class="contact-link" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+    </div>
+  </div>
 </div>
-
-
 
 
 

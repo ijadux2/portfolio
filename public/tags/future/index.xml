@@ -2,23 +2,34 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Future on Ijad&#39;s Portfolio</title>
-    <link>http://localhost:33315/tags/future/</link>
+    <link>https://nainablog.vercel.app/tags/future/</link>
     <description>Recent content in Future on Ijad&#39;s Portfolio</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>Ijadux2</managingEditor>
     <webMaster>Ijadux2</webMaster>
-    <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate><atom:link href="http://localhost:33315/tags/future/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate><atom:link href="https://nainablog.vercel.app/tags/future/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Future</title>
-      <link>http://localhost:33315/posts/future/</link>
+      <link>https://nainablog.vercel.app/posts/future/</link>
       <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:33315/posts/future/</guid>
+      <guid>https://nainablog.vercel.app/posts/future/</guid>
       <description>&lt;!-- end-chunk --&gt;
 &lt;!-- begin-chunk data-anchor=&#34;beyond-the-stethoscope-why-im-choosing-code-over-clinicals&#34; --&gt;
 
-&lt;h2&gt;Beyond the Stethoscope: Why I’m Choosing Code Over Clinicals&lt;/h2&gt;
+&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Beyond the Stethoscope: Why I’m Choosing Code Over Clinicals
+  &lt;a href=&#34;#beyond-the-stethoscope-why-im-choosing-code-over-clinicals&#34; class=&#34;header-anchor-link&#34;&gt;
+&lt;svg
+    xmlns=&#34;http://www.w3.org/2000/svg&#34;
+    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
+    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
+    stroke-linejoin=&#34;round&#34;&gt;
+    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
+&lt;/svg&gt;
+
+&lt;/a&gt;
+&lt;/h2&gt;
 
 &lt;p&gt;In the landscape of a traditional Indian household, career paths often feel like
 a binary choice: &lt;strong&gt;0 (Doctor) or 1 (Engineer).&lt;/strong&gt; For as long as I can remember,
