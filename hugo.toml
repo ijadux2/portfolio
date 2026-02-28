@@ -11,7 +11,7 @@ defaultContentLanguage = "en"
   title = "My Portfolio"
 
   [languages.en.params]
-    description = "Your site description"
+    description = "My personal portfolio website"
     author = "Your Name"
     heroTitleLine1 = "MY PORTFOLIO"
     heroTitleLine2 = "Welcome to my personal website"
@@ -69,10 +69,10 @@ defaultContentLanguage = "en"
 
 [params]
   enableIntegrity = false
-  description = "Your site description"
+  description = "My personal portfolio website"
   author = "Ijadux2"
-  heroTitleLine1 = "MY PORTFOLIO"
-  heroTitleLine2 = "Welcome to my personal website"
+  heroTitleLine1 = "HELLO, I'M IJAD"
+  heroTitleLine2 = "Developer & Linux Enthusiast"
   footerText = "Built with Hugo and Mana theme"
 
   [params.social]
