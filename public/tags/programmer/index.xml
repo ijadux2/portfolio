@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programmer on My Portfolio</title>
-    <link>https://example.com/tags/programmer/</link>
+    <link>https://nainablog.vercel.app/tags/programmer/</link>
     <description>Recent content in Programmer on My Portfolio</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate>
-    <atom:link href="https://example.com/tags/programmer/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nainablog.vercel.app/tags/programmer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Future</title>
-      <link>https://example.com/posts/future/</link>
+      <link>https://nainablog.vercel.app/posts/future/</link>
       <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
-      <guid>https://example.com/posts/future/</guid>
+      <guid>https://nainablog.vercel.app/posts/future/</guid>
       <description>&lt;h2 id=&#34;beyond-the-stethoscope-why-im-choosing-code-over-clinicals&#34;&gt;Beyond the Stethoscope: Why I’m Choosing Code Over Clinicals&lt;/h2&gt;&#xA;&lt;p&gt;In the landscape of a traditional Indian household, career paths often feel like&#xA;a binary choice: &lt;strong&gt;0 (Doctor) or 1 (Engineer).&lt;/strong&gt; For as long as I can remember,&#xA;the &amp;ldquo;expected&amp;rdquo; path for me was the one leading to a medical degree. But while the&#xA;world saw me in a white coat, I was busy staring at a terminal screen, falling in&#xA;love with the logic of syntax and the thrill of a successful build.&lt;/p&gt;</description>
     </item>
   </channel>

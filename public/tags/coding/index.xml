@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coding on My Portfolio</title>
-    <link>https://example.com/tags/coding/</link>
+    <link>https://nainablog.vercel.app/tags/coding/</link>
     <description>Recent content in Coding on My Portfolio</description>
     <generator>Hugo</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 28 Feb 2026 12:52:34 +0530</lastBuildDate>
-    <atom:link href="https://example.com/tags/coding/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://nainablog.vercel.app/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Neovim and journey of coding</title>
-      <link>https://example.com/posts/my-new-post/</link>
+      <link>https://nainablog.vercel.app/posts/my-new-post/</link>
       <pubDate>Sat, 28 Feb 2026 12:52:34 +0530</pubDate>
-      <guid>https://example.com/posts/my-new-post/</guid>
+      <guid>https://nainablog.vercel.app/posts/my-new-post/</guid>
       <description>&lt;h2 id=&#34;neovim&#34;&gt;Neovim&lt;/h2&gt;&#xA;&lt;p&gt;i use neovim for most for the time in my laptop.&#xA;using archlinux with Noctalia shell, custome plugins and config&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ijadux2/sharingan.nvim&#34;&gt;Sharingan.nvim&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;my neovim consist of&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;plugin managaer&lt;/li&gt;&#xA;&lt;li&gt;theme {catppuccin-mocha}&lt;/li&gt;&#xA;&lt;li&gt;my custome plugins {git,app-launcher,tangle,etc}&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;github plugins&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;my fav. snacks.nvim&lt;/li&gt;&#xA;&lt;li&gt;and many more&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;just not becasue of plugins i like neovim&#xA;i like becasue of speed and terminal based editor&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-coding-journey&#34;&gt;my coding journey&lt;/h2&gt;&#xA;&lt;p&gt;when i was introduced by linux in 2020&#xA;it was hard for me to use&lt;/p&gt;</description>
     </item>
   </channel>

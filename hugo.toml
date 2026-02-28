@@ -1,4 +1,4 @@
-baseURL = 'https://example.com/'
+baseURL = 'https://nainablog.vercel.app/'
 theme = "mana"
 defaultContentLanguage = "en"
 
@@ -12,7 +12,7 @@ defaultContentLanguage = "en"
 
   [languages.en.params]
     description = "My personal portfolio website"
-    author = "Your Name"
+    author = "Ijadux2"
     heroTitleLine1 = "MY PORTFOLIO"
     heroTitleLine2 = "Welcome to my personal website"
     custom404Message = "Sorry, the page you are looking for could not be found."
@@ -78,6 +78,7 @@ defaultContentLanguage = "en"
   [params.social]
     github = "https://github.com/ijadux2"
     email = "kv26102009@gmail.com"
+    bluesky = "https://bsky.app/profile/ijadux2.bsky.social"
 
   [params.avatar]
     assetPath = "profile.jpg"
