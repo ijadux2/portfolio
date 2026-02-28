@@ -1,6 +1,6 @@
 {
   "outputDirectory": "public",
-  "env": {
-    "HUGO_VERSION": "0.146.0"
+  "build": {
+    "command": "HUGO_VERSION=0.146.0 hugo --gc --minify"
   }
 }
