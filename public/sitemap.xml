@@ -76,10 +76,6 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
-    <loc>https://nainablog.vercel.app/posts/browser/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url><url>
     <loc>https://nainablog.vercel.app/categories/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
