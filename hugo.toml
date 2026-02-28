@@ -1,105 +1,68 @@
 baseURL = 'https://nainablog.vercel.app/'
-theme = "mana"
+languageCode = "en"
+title = "Ijad's Portfolio"
+theme = "hugo-theme-monochrome"
 defaultContentLanguage = "en"
+enableEmoji = true
 
 [languages.en]
-  languageCode = "en-US"
-  languageName = "English"
-  languageDirection = "ltr"
-  contentDir = "content"
-  weight = 1
-  title = "My Portfolio"
+languageName = "English"
+weight = 1
+author = "Ijadux2"
 
-  [languages.en.params]
-    description = "My personal portfolio website"
-    author = "Ijadux2"
-    heroTitleLine1 = "MY PORTFOLIO"
-    heroTitleLine2 = "Welcome to my personal website"
-    custom404Message = "Sorry, the page you are looking for could not be found."
-    footerText = "Built with Hugo and Mana theme"
-
-  [[languages.en.menus.main]]
-    name = "Home"
-    pageRef = "/"
-    weight = 10
-
-  [[languages.en.menus.main]]
-    name = "Posts"
-    pageRef = "/posts"
-    weight = 20
-
-  [[languages.en.menus.main]]
-    name = "Tags"
-    pageRef = "/tags"
-    weight = 30
-
-  [[languages.en.menus.main]]
-    name = "About"
-    url = "/about/"
-    weight = 40
-
-[pagination]
-  pageSize = 10
-
-[markup]
-  [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 6
-    ordered = false
-  [markup.goldmark]
-    [markup.goldmark.renderer]
-      unsafe = true
-    [markup.goldmark.parser]
-      [markup.goldmark.parser.attribute]
-        block = true
-        title = true
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = true
-    noClasses = false
-    style = "catppuccin-mocha"
+[taxonomies]
+category = "categories"
+tag = "tags"
 
 [outputs]
-  home = ["HTML", "JSON"]
-
-[sitemap]
-  changefreq = "weekly"
-  priority = 0.5
-  filename = "sitemap.xml"
+home = ["HTML", "RSS", "JSON"]
 
 [params]
-  enableIntegrity = false
-  description = "My personal portfolio website"
-  author = "Ijadux2"
-  heroTitleLine1 = "HELLO, I'M IJAD"
-  heroTitleLine2 = "Developer & Linux Enthusiast"
-  footerText = "Built with Hugo and Mana theme"
+author = "Ijadux2"
+description = "My personal portfolio website"
+navbar_title = "Ijad's Portfolio"
+footer = "Copyright © 2025 by Ijadux2"
+color_scheme = "dark"
+enable_toc = true
+toc_position = "right"
+enable_site_search = true
 
-  [params.social]
-    github = "https://github.com/ijadux2"
-    email = "kv26102009@gmail.com"
-    bluesky = "https://bsky.app/profile/ijadux2.bsky.social"
+[params.list_layout]
+enable_group_by_year = true
+enable_show_date = true
+enable_pagination = false
 
-  [params.avatar]
-    assetPath = "profile.jpg"
+[params.syntax_highlight]
+lib = "builtin"
+[params.syntax_highlight.builtin]
+enable_code_copy = true
 
-  [params.codeHighlight]
-    darkTheme = "catppuccin-mocha"
-    lightTheme = "catppuccin-frappe"
+[markup]
+[markup.highlight]
+codeFences = true
+[markup.goldmark]
+[markup.goldmark.renderer]
+unsafe = true
 
-  [params.copyright]
-    startYear = 2025
-    owner = "Ijadux2"
+[sitemap]
+changefreq = "weekly"
+priority = 0.5
+filename = "sitemap.xml"
 
-  [params.admonitions]
-    alertStyle = "favicon"
+[[menu.navbar]]
+identifier = "home"
+name = "Home"
+url = "/"
+weight = 1
 
-  [params.favicons]
-    ico = "/favicon/logo-transparent/favicon.ico"
-    png = "/favicon/logo-transparent/favicon.png"
-    png16 = "/favicon/logo-transparent/favicon-16x16.png"
-    png32 = "/favicon/logo-transparent/favicon-32x32.png"
-    apple180 = "/favicon/logo-transparent/apple-touch-icon.png"
-    android192 = "/favicon/logo-transparent/android-chrome-192x192.png"
-    android512 = "/favicon/logo-transparent/android-chrome-512x512.png"
-    manifest = "/favicon/logo-transparent/site.webmanifest"
+[[menu.navbar]]
+identifier = "posts"
+name = "Posts"
+url = "/posts/"
+weight = 2
+
+[[menu.navbar]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 3
