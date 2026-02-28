@@ -2,31 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My Portfolio</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>https://example.com/posts/</link>
     <description>Recent content in Posts on My Portfolio</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Sat, 28 Feb 2026 13:06:30 +0530</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate>
+    <atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Future</title>
+      <link>https://example.com/posts/future/</link>
+      <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
+      <guid>https://example.com/posts/future/</guid>
+      <description>&lt;p&gt;This is soemthing that i want to tell my parents&#xA;or having a mature mind!! idk.&lt;/p&gt;&#xA;&lt;p&gt;as a young programmer from &amp;ldquo;India&amp;rdquo; theres a mentality i with&#xA;you have to choose either engineer or doctor but in my case&#xA;they force me !!&lt;/p&gt;&#xA;&lt;p&gt;is a dead-fact i dont even choose cumputer as a subject&#xA;so this lacks my certification over computers or programming language&lt;/p&gt;&#xA;&lt;p&gt;as future for &lt;strong&gt;computing&lt;/strong&gt; and &lt;strong&gt;ai&lt;/strong&gt; in my point of veiw&#xA;ai would not replace programming but make it fast&#xA;and more user frendly.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Window Manager</title>
-      <link>http://localhost:1313/posts/window-manager/</link>
+      <link>https://example.com/posts/window-manager/</link>
       <pubDate>Sat, 28 Feb 2026 13:06:30 +0530</pubDate>
-      <guid>http://localhost:1313/posts/window-manager/</guid>
+      <guid>https://example.com/posts/window-manager/</guid>
       <description>&lt;h2 id=&#34;hyprland-and-sway&#34;&gt;Hyprland and Sway&lt;/h2&gt;&#xA;&lt;p&gt;i like both of them and personaly i like hyprland&#xA;not because of large community but for a good wayland compositor&#xA;with in built blur and decoration.&lt;/p&gt;&#xA;&lt;p&gt;and for sway i like it minimalism&#xA;no heary dependencies ready in 20 to 30 mins&lt;/p&gt;&#xA;&lt;h2 id=&#34;hyprland-vs-sway-the-wayland-showdown&#34;&gt;Hyprland vs. Sway: The Wayland Showdown&lt;/h2&gt;&#xA;&lt;p&gt;If you are moving away from X11, you are likely looking at these two powerhouses.&#xA;Both are &lt;strong&gt;Tiling Window Managers (TWMs)&lt;/strong&gt; built for Wayland, but they offer very&#xA;different philosophies for your desktop experience.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Neovim and journey of coding</title>
-      <link>http://localhost:1313/posts/my-new-post/</link>
+      <link>https://example.com/posts/my-new-post/</link>
       <pubDate>Sat, 28 Feb 2026 12:52:34 +0530</pubDate>
-      <guid>http://localhost:1313/posts/my-new-post/</guid>
+      <guid>https://example.com/posts/my-new-post/</guid>
       <description>&lt;h2 id=&#34;neovim&#34;&gt;Neovim&lt;/h2&gt;&#xA;&lt;p&gt;i use neovim for most for the time in my laptop.&#xA;using archlinux with Noctalia shell, custome plugins and config&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/ijadux2/sharingan.nvim&#34;&gt;Sharingan.nvim&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;my neovim consist of&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;plugin managaer&lt;/li&gt;&#xA;&lt;li&gt;theme {catppuccin-mocha}&lt;/li&gt;&#xA;&lt;li&gt;my custome plugins {git,app-launcher,tangle,etc}&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;github plugins&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;my fav. snacks.nvim&lt;/li&gt;&#xA;&lt;li&gt;and many more&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;just not becasue of plugins i like neovim&#xA;i like becasue of speed and terminal based editor&lt;/p&gt;&#xA;&lt;h2 id=&#34;my-coding-journey&#34;&gt;my coding journey&lt;/h2&gt;&#xA;&lt;p&gt;when i was introduced by linux in 2020&#xA;it was hard for me to use&lt;/p&gt;</description>
     </item>
     <item>
       <title>Welcome to My Portfolio</title>
-      <link>http://localhost:1313/posts/first-post/</link>
+      <link>https://example.com/posts/first-post/</link>
       <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/posts/first-post/</guid>
+      <guid>https://example.com/posts/first-post/</guid>
       <description>&lt;h1 id=&#34;welcome&#34;&gt;Welcome&lt;/h1&gt;&#xA;&lt;p&gt;This is my first post on my Hugo portfolio website.&lt;/p&gt;&#xA;&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s how you can set up your own Hugo site:&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;hugo new site mysite&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;nb&#34;&gt;cd&lt;/span&gt; mysite&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;git submodule add https://github.com/Livour/hugo-mana-theme.git themes/mana&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Enjoy building with Hugo!&lt;/p&gt;</description>
     </item>
   </channel>
