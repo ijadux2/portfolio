@@ -2,100 +2,82 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on ijadux2&#39;s website</title>
-    <link>http://localhost:1313/tags/</link>
+    <link>https://nainablog.vercel.app/tags/</link>
     <description>Recent content in Tags on ijadux2&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>Ijadux2</managingEditor>
     <webMaster>Ijadux2</webMaster>
-    <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate><atom:link href="https://nainablog.vercel.app/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ai</title>
-      <link>http://localhost:1313/tags/ai/</link>
+      <link>https://nainablog.vercel.app/tags/ai/</link>
       <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/ai/</guid>
+      <guid>https://nainablog.vercel.app/tags/ai/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Family</title>
-      <link>http://localhost:1313/tags/family/</link>
+      <link>https://nainablog.vercel.app/tags/family/</link>
       <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/family/</guid>
+      <guid>https://nainablog.vercel.app/tags/family/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Future</title>
-      <link>http://localhost:1313/tags/future/</link>
+      <link>https://nainablog.vercel.app/tags/future/</link>
       <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/future/</guid>
+      <guid>https://nainablog.vercel.app/tags/future/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Programmer</title>
-      <link>http://localhost:1313/tags/programmer/</link>
+      <link>https://nainablog.vercel.app/tags/programmer/</link>
       <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/programmer/</guid>
+      <guid>https://nainablog.vercel.app/tags/programmer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hyprland</title>
-      <link>http://localhost:1313/tags/hyprland/</link>
+      <link>https://nainablog.vercel.app/tags/hyprland/</link>
       <pubDate>Sat, 28 Feb 2026 13:06:30 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/hyprland/</guid>
+      <guid>https://nainablog.vercel.app/tags/hyprland/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sway</title>
-      <link>http://localhost:1313/tags/sway/</link>
+      <link>https://nainablog.vercel.app/tags/sway/</link>
       <pubDate>Sat, 28 Feb 2026 13:06:30 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/sway/</guid>
+      <guid>https://nainablog.vercel.app/tags/sway/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Coding</title>
-      <link>http://localhost:1313/tags/coding/</link>
+      <link>https://nainablog.vercel.app/tags/coding/</link>
       <pubDate>Sat, 28 Feb 2026 12:52:34 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/coding/</guid>
+      <guid>https://nainablog.vercel.app/tags/coding/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Neovim</title>
-      <link>http://localhost:1313/tags/neovim/</link>
+      <link>https://nainablog.vercel.app/tags/neovim/</link>
       <pubDate>Sat, 28 Feb 2026 12:52:34 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/neovim/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hugo</title>
-      <link>http://localhost:1313/tags/hugo/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/hugo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Intro</title>
-      <link>http://localhost:1313/tags/intro/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
-      <author>Ijadux2</author>
-      <guid>http://localhost:1313/tags/intro/</guid>
+      <guid>https://nainablog.vercel.app/tags/neovim/</guid>
       <description></description>
     </item>
     

@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on ijadux2&#39;s website</title>
-    <link>http://localhost:1313/</link>
+    <link>https://nainablog.vercel.app/</link>
     <description>Recent content in Home on ijadux2&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>Ijadux2</managingEditor>
     <webMaster>Ijadux2</webMaster>
-    <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate><atom:link href="https://nainablog.vercel.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Future</title>
-      <link>http://localhost:1313/posts/future/</link>
+      <link>https://nainablog.vercel.app/posts/future/</link>
       <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/posts/future/</guid>
+      <guid>https://nainablog.vercel.app/posts/future/</guid>
       <description>&lt;!-- end-chunk --&gt;
 &lt;!-- begin-chunk data-anchor=&#34;beyond-the-stethoscope-why-im-choosing-code-over-clinicals&#34; --&gt;
 
@@ -40,10 +40,10 @@ love with the logic of syntax and the thrill of a successful build.&lt;/p&gt;</d
     
     <item>
       <title>Window Manager</title>
-      <link>http://localhost:1313/posts/window-manager/</link>
+      <link>https://nainablog.vercel.app/posts/window-manager/</link>
       <pubDate>Sat, 28 Feb 2026 13:06:30 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/posts/window-manager/</guid>
+      <guid>https://nainablog.vercel.app/posts/window-manager/</guid>
       <description>&lt;!-- end-chunk --&gt;
 &lt;!-- begin-chunk data-anchor=&#34;hyprland-and-sway&#34; --&gt;
 
@@ -69,10 +69,10 @@ no heary dependencies ready in 20 to 30 mins&lt;/p&gt;</description>
     
     <item>
       <title>Neovim and journey of coding</title>
-      <link>http://localhost:1313/posts/my-new-post/</link>
+      <link>https://nainablog.vercel.app/posts/my-new-post/</link>
       <pubDate>Sat, 28 Feb 2026 12:52:34 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/posts/my-new-post/</guid>
+      <guid>https://nainablog.vercel.app/posts/my-new-post/</guid>
       <description>&lt;!-- end-chunk --&gt;
 &lt;!-- begin-chunk data-anchor=&#34;neovim&#34; --&gt;
 
@@ -116,53 +116,20 @@ i like becasue of speed and terminal based editor&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Welcome to My Portfolio</title>
-      <link>http://localhost:1313/posts/first-post/</link>
-      <pubDate>Mon, 01 Jan 2024 00:00:00 +0000</pubDate>
+      <title></title>
+      <link>https://nainablog.vercel.app/posts/browser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/posts/first-post/</guid>
-      <description>&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;welcome&#34; --&gt;
-
-&lt;h1 class=&#34;header-anchor-wrapper&#34;&gt;Welcome
-  &lt;a href=&#34;#welcome&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h1&gt;
-
-&lt;p&gt;This is my first post on my Hugo portfolio website.&lt;/p&gt;
-&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;getting-started&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Getting Started
-  &lt;a href=&#34;#getting-started&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
-&lt;p&gt;Here&amp;rsquo;s how you can set up your own Hugo site:&lt;/p&gt;</description>
+      <guid>https://nainablog.vercel.app/posts/browser/</guid>
+      <description></description>
     </item>
     
     <item>
       <title>About Me</title>
-      <link>http://localhost:1313/about/</link>
+      <link>https://nainablog.vercel.app/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>https://nainablog.vercel.app/about/</guid>
       <description>&lt;!-- end-chunk --&gt;
 &lt;!-- begin-chunk data-anchor=&#34;about-me&#34; --&gt;
 
@@ -222,6 +189,33 @@ i like becasue of speed and terminal based editor&lt;/p&gt;</description>
 &lt;li&gt;Linux customization&lt;/li&gt;
 &lt;li&gt;Coding in Lua, Bash, Zig&lt;/li&gt;
 &lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mental health</title>
+      <link>https://nainablog.vercel.app/posts/metal-health/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <author>Ijadux2</author>
+      <guid>https://nainablog.vercel.app/posts/metal-health/</guid>
+      <description>&lt;!-- end-chunk --&gt;
+&lt;!-- begin-chunk data-anchor=&#34;mental-health&#34; --&gt;
+
+&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Mental health
+  &lt;a href=&#34;#mental-health&#34; class=&#34;header-anchor-link&#34;&gt;
+&lt;svg
+    xmlns=&#34;http://www.w3.org/2000/svg&#34;
+    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
+    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
+    stroke-linejoin=&#34;round&#34;&gt;
+    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
+&lt;/svg&gt;
+
+&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;p&gt;Expressing the reality of mental health as a teenager is incredibly difficult.
+You’re expected to have it all figured out while your brain is still under construction.
+Throwing a relationship into that mix? That’s a whole different level of complexity.&lt;/p&gt;</description>
     </item>
     
   </channel>

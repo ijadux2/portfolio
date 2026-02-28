@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sway on ijadux2&#39;s website</title>
-    <link>http://localhost:1313/tags/sway/</link>
+    <link>https://nainablog.vercel.app/tags/sway/</link>
     <description>Recent content in Sway on ijadux2&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <managingEditor>Ijadux2</managingEditor>
     <webMaster>Ijadux2</webMaster>
-    <lastBuildDate>Sat, 28 Feb 2026 13:06:30 +0530</lastBuildDate><atom:link href="http://localhost:1313/tags/sway/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Feb 2026 13:06:30 +0530</lastBuildDate><atom:link href="https://nainablog.vercel.app/tags/sway/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Window Manager</title>
-      <link>http://localhost:1313/posts/window-manager/</link>
+      <link>https://nainablog.vercel.app/posts/window-manager/</link>
       <pubDate>Sat, 28 Feb 2026 13:06:30 +0530</pubDate>
       <author>Ijadux2</author>
-      <guid>http://localhost:1313/posts/window-manager/</guid>
+      <guid>https://nainablog.vercel.app/posts/window-manager/</guid>
       <description>&lt;!-- end-chunk --&gt;
 &lt;!-- begin-chunk data-anchor=&#34;hyprland-and-sway&#34; --&gt;
 
