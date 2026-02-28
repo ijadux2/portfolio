@@ -188,6 +188,11 @@
         <i class="fab fa-github"></i>
       </a>
       {{ end }}
+      {{ if .Site.Params.social.bluesky }}
+      <a href="https://bsky.app/profile/{{ .Site.Params.social.bluesky }}" class="social-link" target="_blank">
+        <i class="fab fa-bluesky"></i>
+      </a>
+      {{ end }}
       {{ if .Site.Params.social.email }}
       <a href="mailto:{{ .Site.Params.social.email }}" class="social-link">
         <i class="fas fa-envelope"></i>

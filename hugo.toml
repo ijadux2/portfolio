@@ -35,6 +35,7 @@ tagline = "System Programmer & Automation Expert"
 
 [params.social]
 github = "ijadux2"
+bluesky = "ijadux2.bsky.social"
 email = "kv26102009@gmail.com"
 
 [params.list_layout]
