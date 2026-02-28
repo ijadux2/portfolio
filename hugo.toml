@@ -1,6 +1,6 @@
 baseURL = 'https://nainablog.vercel.app/'
 languageCode = "en"
-title = "Ijad's Portfolio"
+title = "ijadux2's website"
 theme = "hugo-theme-monochrome"
 defaultContentLanguage = "en"
 enableEmoji = true
