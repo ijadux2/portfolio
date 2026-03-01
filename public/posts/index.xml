@@ -116,6 +116,109 @@ i like becasue of speed and terminal based editor&lt;/p&gt;</description>
     </item>
     
     <item>
+      <title>🛠️ Developer Resource Hub</title>
+      <link>https://nainablog.vercel.app/posts/programming/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Ijadux2</author>
+      <guid>https://nainablog.vercel.app/posts/programming/</guid>
+      <description>&lt;!-- end-chunk --&gt;
+&lt;!-- begin-chunk data-anchor=&#34;-programming--documentation&#34; --&gt;
+
+&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;🚀 Programming &amp;amp; Documentation
+  &lt;a href=&#34;#-programming--documentation&#34; class=&#34;header-anchor-link&#34;&gt;
+&lt;svg
+    xmlns=&#34;http://www.w3.org/2000/svg&#34;
+    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
+    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
+    stroke-linejoin=&#34;round&#34;&gt;
+    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
+&lt;/svg&gt;
+
+&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Resource&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Category&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Description/Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;DevDocs&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Tool&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://devdocs.io/&#34;&gt;devdocs.io&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Zig&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Language&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://ziglang.org/&#34;&gt;ziglang.org&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Ziggy&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Practice&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/ziggy/&#34;&gt;ijadux2/ziggy&lt;/a&gt; (&lt;strong&gt;Zig practice&lt;/strong&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Nixi&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Language&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://nixi-phi.vercel.app/&#34;&gt;nixi-phi.vercel.app&lt;/a&gt; (&lt;strong&gt;Documentation&lt;/strong&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Nixi Repo&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;GitHub&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/nixi&#34;&gt;ijadux2/nixi&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;ADAN-lang&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Collab&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/Cappucina/ADAN&#34;&gt;Cappucina/ADAN&lt;/a&gt; (&lt;strong&gt;Contribution needed&lt;/strong&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;linux&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;kernel&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/torvalds/linux&#34;&gt;linux-kernel&lt;/a&gt; (&lt;strong&gt;github&lt;/strong&gt;)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Arch&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;linux&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://archlinux.org/&#34;&gt;Arch-wiki&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;!-- end-chunk --&gt;
+&lt;!-- begin-chunk data-anchor=&#34;automation-and-devops&#34; --&gt;
+
+&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Automation and Devops
+  &lt;a href=&#34;#automation-and-devops&#34; class=&#34;header-anchor-link&#34;&gt;
+&lt;svg
+    xmlns=&#34;http://www.w3.org/2000/svg&#34;
+    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
+    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
+    stroke-linejoin=&#34;round&#34;&gt;
+    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
+&lt;/svg&gt;
+
+&lt;/a&gt;
+&lt;/h2&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;python
+go
+javascript
+typescript
+lua
+bash
+zig
+c
+c++
+c3
+rust&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>Mental health</title>
       <link>https://nainablog.vercel.app/posts/metal-health/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

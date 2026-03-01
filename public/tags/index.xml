@@ -81,5 +81,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Passion</title>
+      <link>https://nainablog.vercel.app/tags/passion/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Ijadux2</author>
+      <guid>https://nainablog.vercel.app/tags/passion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Programming</title>
+      <link>https://nainablog.vercel.app/tags/programming/</link>
+      <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
+      <author>Ijadux2</author>
+      <guid>https://nainablog.vercel.app/tags/programming/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
