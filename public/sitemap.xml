@@ -72,6 +72,21 @@
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url><url>
+    <loc>https://nainablog.vercel.app/tags/passion/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://nainablog.vercel.app/tags/programming/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
+    <loc>https://nainablog.vercel.app/posts/programming/</loc>
+    <lastmod>2026-02-25T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url><url>
     <loc>https://nainablog.vercel.app/about/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
