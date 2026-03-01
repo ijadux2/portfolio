@@ -4,11 +4,11 @@ description: "Welcome to my portfolio"
 layout: "home"
 ---
 
-# Hello, I'm Kumar Vaibhav
+## Hello, I'm Kumar Vaibhav
 
 I'm a passionate programmer with expertise in system scripting and configuration management. I enjoy building efficient tools and automating workflows.
 
-## About Me
+### About Me
 
 - 💻 Using Neovim as my main editor  
   Linux user since - 🐧2020

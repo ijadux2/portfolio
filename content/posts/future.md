@@ -51,5 +51,19 @@ I am building my portfolio not just to create software, but to prove a point:
 
 I’m currently heads-down in the IDE, turning logic into reality. Thanks to the
 community and those of you who have supported my interest in programming—you
-are the reason I keep hitting `Ctrl+S`.
+are the reason I keep hitting `:wq`.
 **Onward.**
+
+### thanks to
+
+- Tscoding **for recreational programming**
+- Bashbuuny **for basics and tech newss**
+- Jupniper Dev **for game dev**
+- Theprimaagen **personal fav**
+- Teej **neovimmm**
+- Typecrft **basics of linux, vim, and ricing**
+- DistroTube **emacs**
+- Tony-btw **linux and nixos**
+- Joshua Blais **emacs and linux**
+- Linkarzu **macos and cli tools**
+- DevopsToolBox **vim basics**
