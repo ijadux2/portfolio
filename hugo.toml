@@ -37,7 +37,7 @@ weight = 30
 [languages.en-gb.params]
 sitename = "ijadux2's website"
 defaultColor = "dark"
-description = "System Programmer & Automation Expert - Personal Portfolio"
+description = "Open-Source Contributor"
 mainSections = ['posts']
 toc = true
 tocOpen = false
