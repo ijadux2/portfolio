@@ -1,79 +1,89 @@
 baseURL = 'https://nainablog.vercel.app/'
-languageCode = "en"
+languageCode = 'en-us'
 title = "ijadux2's website"
-theme = "hugo-theme-monochrome"
-defaultContentLanguage = "en"
+theme = "hugo-blog-awesome"
+defaultContentLanguage = "en-gb"
 enableEmoji = true
+ignoreErrors = ["additional-script-loading-error"]
 
-[languages.en]
+[author]
+name = "Kumar Vaibhav"
+email = "kv26102009@gmail.com"
+
+[languages.en-gb]
 languageName = "English"
+languageCode = "en-gb"
+contentDir = "content"
 weight = 1
-author = "Ijadux2"
+author = "Kumar Vaibhav"
+
+[languages.en-gb.menu]
+[[languages.en-gb.menu.main]]
+pageRef="/"
+name = 'Home'
+url = '/'
+weight = 10
+[[languages.en-gb.menu.main]]
+pageRef="posts"
+name = 'Posts'
+url = '/posts/'
+weight = 20
+[[languages.en-gb.menu.main]]
+pageRef="about"
+name = 'About'
+url = '/about/'
+weight = 30
+
+[languages.en-gb.params]
+sitename = "ijadux2's website"
+defaultColor = "dark"
+description = "System Programmer & Automation Expert - Personal Portfolio"
+mainSections = ['posts']
+toc = true
+tocOpen = false
+goToTop = true
+dateFormat = ""
+
+[languages.en-gb.params.author]
+avatar = "avatar.jpg"
+intro = "System Programmer & Automation Expert"
+name = "Kumar Vaibhav"
+description = "My personal portfolio website"
+
+[languages.en-gb.params.webmanifest]
+name = "ijadux2"
+short_name = "ijadux2"
+start_url = "/"
+theme_color = "#434648"
+background_color = "#131418"
+display = "standalone"
+
+[markup]
+[markup.highlight]
+noClasses = false
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 4
+ordered = false
 
 [taxonomies]
 category = "categories"
 tag = "tags"
 
-[outputs]
-home = ["HTML", "RSS", "JSON"]
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/ijadux2"
 
-[params]
-author = "Ijadux2"
-description = "My personal portfolio website"
-navbar_title = "ijadux2 Portfolio"
-footer = "Copyright © 2025 by Ijadux2"
-color_scheme = "dark"
-enable_toc = true
-toc_position = "right"
-enable_site_search = true
+[[params.socialIcons]]
+name = "bluesky"
+url = "https://bsky.app/profile/ijadux2.bsky.social"
 
-[params.profile]
-enabled = true
-image = "images/profile.jpg"
-name = "Kumar Vaibhav"
-tagline = "System Programmer & Automation Expert"
+[[params.socialIcons]]
+name = "Email"
+url = "mailto:kv26102009@gmail.com"
 
-[params.social]
-github = "ijadux2"
-bluesky = "ijadux2.bsky.social"
-email = "kv26102009@gmail.com"
-
-[params.list_layout]
-enable_group_by_year = true
-enable_show_date = true
-enable_pagination = false
-
-[params.syntax_highlight]
-lib = "builtin"
-[params.syntax_highlight.builtin]
-enable_code_copy = true
-
-[markup]
-[markup.highlight]
-codeFences = true
-[markup.goldmark]
-[markup.goldmark.renderer]
-unsafe = true
-
-[sitemap]
-changefreq = "weekly"
-priority = 0.5
-filename = "sitemap.xml"
-
-[[menu.navbar]]
-identifier = "home"
-name = "Home"
-url = "/"
-weight = 1
-
-[[menu.navbar]]
-identifier = "posts"
-name = "Posts"
-url = "/posts/"
-weight = 2
-
-[[menu.navbar]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 3
+[[params.socialIcons]]
+name = "Rss"
+url = "/index.xml"

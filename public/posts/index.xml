@@ -5,90 +5,52 @@
     <link>https://nainablog.vercel.app/posts/</link>
     <description>Recent content in Posts on ijadux2&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>Ijadux2</managingEditor>
-    <webMaster>Ijadux2</webMaster>
+    <language>en-gb</language>
     <lastBuildDate>Sat, 28 Feb 2026 15:00:02 +0530</lastBuildDate><atom:link href="https://nainablog.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Future</title>
       <link>https://nainablog.vercel.app/posts/future/</link>
       <pubDate>Sat, 28 Feb 2026 15:00:02 +0530</pubDate>
-      <author>Ijadux2</author>
+      
       <guid>https://nainablog.vercel.app/posts/future/</guid>
-      <description>&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;beyond-the-stethoscope-why-im-choosing-code-over-clinicals&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Beyond the Stethoscope: Why I’m Choosing Code Over Clinicals
-  &lt;a href=&#34;#beyond-the-stethoscope-why-im-choosing-code-over-clinicals&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
+      
+      <description>&lt;h2 id=&#34;beyond-the-stethoscope-why-im-choosing-code-over-clinicals&#34;&gt;Beyond the Stethoscope: Why I’m Choosing Code Over Clinicals&lt;/h2&gt;
 &lt;p&gt;In the landscape of a traditional Indian household, career paths often feel like
 a binary choice: &lt;strong&gt;0 (Doctor) or 1 (Engineer).&lt;/strong&gt; For as long as I can remember,
 the &amp;ldquo;expected&amp;rdquo; path for me was the one leading to a medical degree. But while the
 world saw me in a white coat, I was busy staring at a terminal screen, falling in
 love with the logic of syntax and the thrill of a successful build.&lt;/p&gt;</description>
+      
     </item>
     
     <item>
       <title>Window Manager</title>
       <link>https://nainablog.vercel.app/posts/window-manager/</link>
       <pubDate>Sat, 28 Feb 2026 13:06:30 +0530</pubDate>
-      <author>Ijadux2</author>
+      
       <guid>https://nainablog.vercel.app/posts/window-manager/</guid>
-      <description>&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;hyprland-and-sway&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Hyprland and Sway
-  &lt;a href=&#34;#hyprland-and-sway&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
+      
+      <description>&lt;h2 id=&#34;hyprland-and-sway&#34;&gt;Hyprland and Sway&lt;/h2&gt;
 &lt;p&gt;i like both of them and personaly i like hyprland
 not because of large community but for a good wayland compositor
 with in built blur and decoration.&lt;/p&gt;
 &lt;p&gt;and for sway i like it minimalism
-no heary dependencies ready in 20 to 30 mins&lt;/p&gt;</description>
+no heary dependencies ready in 20 to 30 mins&lt;/p&gt;
+&lt;h2 id=&#34;hyprland-vs-sway-the-wayland-showdown&#34;&gt;Hyprland vs. Sway: The Wayland Showdown&lt;/h2&gt;
+&lt;p&gt;If you are moving away from X11, you are likely looking at these two powerhouses.
+Both are &lt;strong&gt;Tiling Window Managers (TWMs)&lt;/strong&gt; built for Wayland, but they offer very
+different philosophies for your desktop experience.&lt;/p&gt;</description>
+      
     </item>
     
     <item>
       <title>Neovim and journey of coding</title>
       <link>https://nainablog.vercel.app/posts/my-new-post/</link>
       <pubDate>Sat, 28 Feb 2026 12:52:34 +0530</pubDate>
-      <author>Ijadux2</author>
+      
       <guid>https://nainablog.vercel.app/posts/my-new-post/</guid>
-      <description>&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;neovim&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Neovim
-  &lt;a href=&#34;#neovim&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
+      
+      <description>&lt;h2 id=&#34;neovim&#34;&gt;Neovim&lt;/h2&gt;
 &lt;p&gt;i use neovim for most for the time in my laptop.
 using archlinux with Noctalia shell, custome plugins and config&lt;/p&gt;
 &lt;ul&gt;
@@ -112,31 +74,21 @@ using archlinux with Noctalia shell, custome plugins and config&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;just not becasue of plugins i like neovim
-i like becasue of speed and terminal based editor&lt;/p&gt;</description>
+i like becasue of speed and terminal based editor&lt;/p&gt;
+&lt;h2 id=&#34;my-coding-journey&#34;&gt;my coding journey&lt;/h2&gt;
+&lt;p&gt;when i was introduced by linux in 2020
+it was hard for me to use&lt;/p&gt;</description>
+      
     </item>
     
     <item>
       <title>🛠️ Developer Resource Hub</title>
       <link>https://nainablog.vercel.app/posts/programming/</link>
       <pubDate>Wed, 25 Feb 2026 00:00:00 +0000</pubDate>
-      <author>Ijadux2</author>
+      
       <guid>https://nainablog.vercel.app/posts/programming/</guid>
-      <description>&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;-programming--documentation&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;🚀 Programming &amp;amp; Documentation
-  &lt;a href=&#34;#-programming--documentation&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
+      
+      <description>&lt;h2 id=&#34;-programming--documentation&#34;&gt;🚀 Programming &amp;amp; Documentation&lt;/h2&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -188,22 +140,7 @@ i like becasue of speed and terminal based editor&lt;/p&gt;</description>
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;automation-and-devops&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Automation and Devops
-  &lt;a href=&#34;#automation-and-devops&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
+&lt;h2 id=&#34;automation-and-devops&#34;&gt;Automation and Devops&lt;/h2&gt;
 &lt;blockquote&gt;
 &lt;p&gt;python
 go
@@ -215,34 +152,166 @@ zig
 c
 c++
 c3
-rust&lt;/p&gt;</description>
+rust&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&#34;renne-script-and-renne-editor&#34;&gt;Renne-script and Renne-editor&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;editor based on neovim and vim&lt;/li&gt;
+&lt;li&gt;configuration lang Renne-script&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;messsaging-app&#34;&gt;Messsaging app&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;built in zig&lt;/li&gt;
+&lt;li&gt;encrypted,foucs like telegram&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;gitstack-and-gitstack-app&#34;&gt;Gitstack and Gitstack-app&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Gitstack&#34;&gt;https://github.com/Gitstack&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Gitstack-app&#34;&gt;https://github.com/Gitstack-app&lt;/a&gt; &lt;strong&gt;gui =&amp;gt; gtk&lt;/strong&gt;, &lt;strong&gt;cli&lt;/strong&gt;, &lt;strong&gt;github-auth&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:2020/&#34;&gt;http://localhost:2020/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-personal-projects-ijadux2-kumar-vaibhav&#34;&gt;👤 Personal Projects (@ijadux2) {Kumar Vaibhav}&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Project&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Stack&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Link&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Candy Crush&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Lua&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/candy-crush/&#34;&gt;Candy Crush Repo&lt;/a&gt; (Game in Lua)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Libs-for-bash&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Bash&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/libs-for-bash/&#34;&gt;Bash Libs Repo&lt;/a&gt; (Extra libs)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Nix Config&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;NixOS&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/nix/&#34;&gt;Nix Dotfiles&lt;/a&gt; (Dotfiles)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Python Browser&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Python&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/python-browser/&#34;&gt;Python Browser Repo&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Rin&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Nix&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/rin/&#34;&gt;nix-experiment&lt;/a&gt; (Web Framework - Private)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;My Fedora&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;System&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/my-fedora/&#34;&gt;fedora Dotfiles&lt;/a&gt; (Fedora makeover)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Portfolio&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;Web&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/portfolio/&#34;&gt;Portfolio Site&lt;/a&gt; (Personal Site)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;nixi&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;nixi&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/ijadux2/nixi&#34;&gt;nixi-lang&lt;/a&gt; (nixi language)&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-nix-ecosystem&#34;&gt;❄️ Nix Ecosystem&lt;/h2&gt;
+&lt;h3 id=&#34;core-repositories&#34;&gt;Core Repositories&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/Nixos&#34;&gt;NixOS Organization&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NixOS/nix&#34;&gt;Nix Package Manager&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NixOS/nixpkgs&#34;&gt;Nixpkgs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/NixOS/nix.dev&#34;&gt;Nix.dev Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;community-tools&#34;&gt;Community Tools&lt;/h3&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Tool&lt;/th&gt;
+          &lt;th style=&#34;text-align: left&#34;&gt;Description&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Home-Manager&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/nix-community/home-manager&#34;&gt;nix-community/home-manager&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Awesome-Nix&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/nix-community/awesome-nix&#34;&gt;nix-community/awesome-nix&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;NixVim&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/nix-community/nixvim&#34;&gt;nix-community/nixvim&lt;/a&gt; (Neovim + Nix)&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;Stylix&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/nix-community/stylix&#34;&gt;nix-community/stylix&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;strong&gt;NixD&lt;/strong&gt;&lt;/td&gt;
+          &lt;td style=&#34;text-align: left&#34;&gt;&lt;a href=&#34;https://github.com/nix-community/nixd&#34;&gt;nix-community/nixd&lt;/a&gt;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-workflow--editors&#34;&gt;⌨️ Workflow &amp;amp; Editors&lt;/h2&gt;
+&lt;h3 id=&#34;neovim&#34;&gt;Neovim&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://dotfyle.com/&#34;&gt;Dotfyle&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/neovim/neovim&#34;&gt;Neovim GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ijadux2/nvim-for-me/&#34;&gt;My Config&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;emacs-user-tsoding&#34;&gt;Emacs user {tsoding}&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tsoding:&lt;/strong&gt; &lt;a href=&#34;https://github.com/tsoding&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;sowon&lt;/strong&gt; &lt;a href=&#34;https://github.com/tsoding/sowon&#34;&gt;Sowon&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Rexim:&lt;/strong&gt; &lt;a href=&#34;https://github.com/rexim&#34;&gt;GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;lust2d&lt;/strong&gt; &lt;a href=&#34;https://github.com/tsoding/lust2d&#34;&gt;github&lt;/a&gt; &lt;strong&gt;replacemnt for love2d in js and raylib&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;game&lt;/strong&gt; &lt;a href=&#34;https://github.com/tsoding/nob.h&#34;&gt;github&lt;/a&gt; &lt;strong&gt;nob.h&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;-aesthetic--systems&#34;&gt;🎨 Aesthetic &amp;amp; Systems&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Theme:&lt;/strong&gt; &lt;a href=&#34;https://catppuccin.com/&#34;&gt;Catppuccin Mocha&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fonts:&lt;/strong&gt; &lt;a href=&#34;https://github.com/githubnext/monaspace&#34;&gt;Monaspace&lt;/a&gt; and &lt;a href=&#34;https://www.nerdfonts.com/&#34;&gt;Nerd Fonts&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;distros&#34;&gt;&lt;strong&gt;Distros:&lt;/strong&gt;&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://nixos.org/&#34;&gt;NixOS&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://garudalinux.org/&#34;&gt;Garuda&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.fedoraproject.org/&#34;&gt;Fedora&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Inspiration:&lt;/strong&gt; &lt;a href=&#34;https://www.tonybtw.com/&#34;&gt;Tony-btw&lt;/a&gt;&lt;/p&gt;</description>
+      
     </item>
     
     <item>
       <title>Mental health</title>
       <link>https://nainablog.vercel.app/posts/metal-health/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>Ijadux2</author>
+      
       <guid>https://nainablog.vercel.app/posts/metal-health/</guid>
-      <description>&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;mental-health&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Mental health
-  &lt;a href=&#34;#mental-health&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
+      
+      <description>&lt;h2 id=&#34;mental-health&#34;&gt;Mental health&lt;/h2&gt;
 &lt;p&gt;Expressing the reality of mental health as a teenager is incredibly difficult.
 You’re expected to have it all figured out while your brain is still under construction.
-Throwing a relationship into that mix? That’s a whole different level of complexity.&lt;/p&gt;</description>
+Throwing a relationship into that mix? That’s a whole different level of complexity.&lt;/p&gt;
+&lt;p&gt;Honestly, trying to manage family expectations, a girlfriend’s needs, and a
+social life all at once is a genuine art form. Add a full day of staring at
+a screen, losing yourself in lines of code, and you’re running on empty before
+the day is even half over.&lt;/p&gt;</description>
+      
     </item>
     
   </channel>

@@ -5,37 +5,26 @@
     <link>https://nainablog.vercel.app/tags/hyprland/</link>
     <description>Recent content in Hyprland on ijadux2&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>Ijadux2</managingEditor>
-    <webMaster>Ijadux2</webMaster>
+    <language>en-gb</language>
     <lastBuildDate>Sat, 28 Feb 2026 13:06:30 +0530</lastBuildDate><atom:link href="https://nainablog.vercel.app/tags/hyprland/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Window Manager</title>
       <link>https://nainablog.vercel.app/posts/window-manager/</link>
       <pubDate>Sat, 28 Feb 2026 13:06:30 +0530</pubDate>
-      <author>Ijadux2</author>
+      
       <guid>https://nainablog.vercel.app/posts/window-manager/</guid>
-      <description>&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;hyprland-and-sway&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Hyprland and Sway
-  &lt;a href=&#34;#hyprland-and-sway&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
+      
+      <description>&lt;h2 id=&#34;hyprland-and-sway&#34;&gt;Hyprland and Sway&lt;/h2&gt;
 &lt;p&gt;i like both of them and personaly i like hyprland
 not because of large community but for a good wayland compositor
 with in built blur and decoration.&lt;/p&gt;
 &lt;p&gt;and for sway i like it minimalism
-no heary dependencies ready in 20 to 30 mins&lt;/p&gt;</description>
+no heary dependencies ready in 20 to 30 mins&lt;/p&gt;
+&lt;h2 id=&#34;hyprland-vs-sway-the-wayland-showdown&#34;&gt;Hyprland vs. Sway: The Wayland Showdown&lt;/h2&gt;
+&lt;p&gt;If you are moving away from X11, you are likely looking at these two powerhouses.
+Both are &lt;strong&gt;Tiling Window Managers (TWMs)&lt;/strong&gt; built for Wayland, but they offer very
+different philosophies for your desktop experience.&lt;/p&gt;</description>
+      
     </item>
     
   </channel>

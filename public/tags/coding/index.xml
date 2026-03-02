@@ -5,32 +5,16 @@
     <link>https://nainablog.vercel.app/tags/coding/</link>
     <description>Recent content in Coding on ijadux2&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <managingEditor>Ijadux2</managingEditor>
-    <webMaster>Ijadux2</webMaster>
+    <language>en-gb</language>
     <lastBuildDate>Sat, 28 Feb 2026 12:52:34 +0530</lastBuildDate><atom:link href="https://nainablog.vercel.app/tags/coding/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Neovim and journey of coding</title>
       <link>https://nainablog.vercel.app/posts/my-new-post/</link>
       <pubDate>Sat, 28 Feb 2026 12:52:34 +0530</pubDate>
-      <author>Ijadux2</author>
+      
       <guid>https://nainablog.vercel.app/posts/my-new-post/</guid>
-      <description>&lt;!-- end-chunk --&gt;
-&lt;!-- begin-chunk data-anchor=&#34;neovim&#34; --&gt;
-
-&lt;h2 class=&#34;header-anchor-wrapper&#34;&gt;Neovim
-  &lt;a href=&#34;#neovim&#34; class=&#34;header-anchor-link&#34;&gt;
-&lt;svg
-    xmlns=&#34;http://www.w3.org/2000/svg&#34;
-    width=&#34;1rem&#34; height=&#34;1rem&#34; viewBox=&#34;0 0 24 24&#34; fill=&#34;none&#34;
-    stroke=&#34;currentColor&#34; stroke-width=&#34;2&#34; stroke-linecap=&#34;round&#34;
-    stroke-linejoin=&#34;round&#34;&gt;
-    &lt;line x1=&#34;4&#34; y1=&#34;9&#34; x2=&#34;20&#34; y2=&#34;9&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;4&#34; y1=&#34;15&#34; x2=&#34;20&#34; y2=&#34;15&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;10&#34; y1=&#34;3&#34; x2=&#34;8&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;&lt;line x1=&#34;16&#34; y1=&#34;3&#34; x2=&#34;14&#34; y2=&#34;21&#34;&gt;&lt;/line&gt;
-&lt;/svg&gt;
-
-&lt;/a&gt;
-&lt;/h2&gt;
-
+      
+      <description>&lt;h2 id=&#34;neovim&#34;&gt;Neovim&lt;/h2&gt;
 &lt;p&gt;i use neovim for most for the time in my laptop.
 using archlinux with Noctalia shell, custome plugins and config&lt;/p&gt;
 &lt;ul&gt;
@@ -54,7 +38,11 @@ using archlinux with Noctalia shell, custome plugins and config&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;just not becasue of plugins i like neovim
-i like becasue of speed and terminal based editor&lt;/p&gt;</description>
+i like becasue of speed and terminal based editor&lt;/p&gt;
+&lt;h2 id=&#34;my-coding-journey&#34;&gt;my coding journey&lt;/h2&gt;
+&lt;p&gt;when i was introduced by linux in 2020
+it was hard for me to use&lt;/p&gt;</description>
+      
     </item>
     
   </channel>
