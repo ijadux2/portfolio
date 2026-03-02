@@ -298,25 +298,31 @@ rust&lt;/p&gt;
     
     <item>
       <title>About Me</title>
-      <link>https://nainablog.vercel.app/about/</link>
+      <link>https://nainablog.vercel.app/pages/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://nainablog.vercel.app/about/</guid>
+      <guid>https://nainablog.vercel.app/pages/about/</guid>
       
-      <description>&lt;h2 id=&#34;about-me&#34;&gt;About Me&lt;/h2&gt;
-&lt;p&gt;Hi! I&amp;rsquo;m a developer who loves coding and open source.&lt;/p&gt;
-&lt;h3 id=&#34;my-setup&#34;&gt;My Setup&lt;/h3&gt;
+      <description>&lt;h2 id=&#34;hello-im-kumar-vaibhav&#34;&gt;Hello, I&amp;rsquo;m Kumar Vaibhav&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m a passionate programmer with expertise in system scripting and configuration management. I enjoy building efficient tools and automating workflows.&lt;/p&gt;
+&lt;h3 id=&#34;about-me&#34;&gt;About Me&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;OS:&lt;/strong&gt; Arch Linux&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Editor:&lt;/strong&gt; Neovim&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Shell:&lt;/strong&gt; Zsh with Oh-My-Zsh&lt;/li&gt;
+&lt;li&gt;💻 Using Neovim as my main editor&lt;br&gt;
+Linux user since - 🐧2020&lt;/li&gt;
+&lt;li&gt;🔧 Building custom configurations and sharing them&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;interests&#34;&gt;Interests&lt;/h2&gt;
+&lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Open source software&lt;/li&gt;
-&lt;li&gt;Linux customization&lt;/li&gt;
-&lt;li&gt;Coding in Lua, Bash, Zig&lt;/li&gt;
-&lt;/ul&gt;</description>
+&lt;li&gt;&lt;strong&gt;Bash&lt;/strong&gt; - Shell scripting for automation&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lua&lt;/strong&gt; - Neovim plugin development&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt; - Versatile programming&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Linux&lt;/strong&gt; - System administration&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Nix&lt;/strong&gt; - Declarative package management&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Window Managers&lt;/strong&gt; - Hyprland, BSPWM, Sway&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
+&lt;h3 id=&#34;neovim-customizations&#34;&gt;Neovim Customizations&lt;/h3&gt;
+&lt;p&gt;Building Neovim with Lazy for a good code editor for Linux&lt;/p&gt;</description>
       
     </item>
     

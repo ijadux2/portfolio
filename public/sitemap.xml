@@ -53,10 +53,12 @@
     <loc>https://nainablog.vercel.app/posts/programming/</loc>
     <lastmod>2026-02-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nainablog.vercel.app/about/</loc>
+    <loc>https://nainablog.vercel.app/pages/about/</loc>
   </url><url>
     <loc>https://nainablog.vercel.app/categories/</loc>
   </url><url>
     <loc>https://nainablog.vercel.app/posts/metal-health/</loc>
+  </url><url>
+    <loc>https://nainablog.vercel.app/pages/</loc>
   </url>
 </urlset>
