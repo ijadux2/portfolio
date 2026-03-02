@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://nainablog.vercel.app/tags/git/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/tags/github/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/posts/opensourcemd/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/tags/opensource/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/posts/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/tags/</loc>
+    <lastmod>2026-03-02T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://nainablog.vercel.app/tags/ai/</loc>
     <lastmod>2026-02-28T15:00:02+05:30</lastmod>
   </url><url>
@@ -14,16 +35,7 @@
     <loc>https://nainablog.vercel.app/tags/future/</loc>
     <lastmod>2026-02-28T15:00:02+05:30</lastmod>
   </url><url>
-    <loc>https://nainablog.vercel.app/</loc>
-    <lastmod>2026-02-28T15:00:02+05:30</lastmod>
-  </url><url>
-    <loc>https://nainablog.vercel.app/posts/</loc>
-    <lastmod>2026-02-28T15:00:02+05:30</lastmod>
-  </url><url>
     <loc>https://nainablog.vercel.app/tags/programmer/</loc>
-    <lastmod>2026-02-28T15:00:02+05:30</lastmod>
-  </url><url>
-    <loc>https://nainablog.vercel.app/tags/</loc>
     <lastmod>2026-02-28T15:00:02+05:30</lastmod>
   </url><url>
     <loc>https://nainablog.vercel.app/tags/hyprland/</loc>
