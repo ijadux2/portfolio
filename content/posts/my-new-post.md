@@ -28,7 +28,7 @@ i like becasue of speed and terminal based editor
 when i was introduced by linux in 2020
 it was hard for me to use
 
-- plugin managaer
+- package managaer
 - terminal , bash
 - settings
 - games etc
@@ -38,7 +38,6 @@ a sudden jump form ground to mountain Ubunut-base => Arch-based
 
 after hopping 20 linux distro
 i learn linux architecture and idology
-
 from this event i like to code in
 
 - bash
