@@ -6,7 +6,7 @@ print() {
 
 # hugo build
 
-project="$HOME/codespace/portfolio/"
+project="$HOME/ijadux2/Ijadux2.blog/"
 
 cd $project ||
   print "building the project ..."
