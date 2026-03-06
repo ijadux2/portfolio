@@ -2,22 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://nainablog.vercel.app/</loc>
-    <lastmod>2026-03-05T00:00:00+00:00</lastmod>
+    <loc>https://nainablog.vercel.app/tags/china/</loc>
+    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://nainablog.vercel.app/posts/neovim/</loc>
-    <lastmod>2026-03-05T00:00:00+00:00</lastmod>
+    <loc>https://nainablog.vercel.app/</loc>
+    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/tags/india/</loc>
+    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/posts/indian_culture/</loc>
+    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/tags/kung_fu_yoga/</loc>
+    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/tags/movie/</loc>
+    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nainablog.vercel.app/posts/</loc>
+    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/tags/</loc>
+    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://nainablog.vercel.app/posts/neovim/</loc>
     <lastmod>2026-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nainablog.vercel.app/tags/productivity/</loc>
     <lastmod>2026-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nainablog.vercel.app/tags/second-brain/</loc>
-    <lastmod>2026-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://nainablog.vercel.app/tags/</loc>
     <lastmod>2026-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://nainablog.vercel.app/posts/craze/</loc>
