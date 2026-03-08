@@ -1,5 +1,5 @@
 ---
-title: Nxios
+title: Nixos
 date: 2026-03-08
 tags: [nix, config, nixos]
 ---
@@ -27,4 +27,6 @@ I use Nixos as my daily driver Operating System and i Love it.
 after all Nixos wins from Archlinux not just in terms of
 customizations, built for stability with Looks, manageable.
 
-> I use Nixos btw
+and my dots are in [Nix](https://github.com/ijadux2/nix)
+
+`I use Nixos btw`
