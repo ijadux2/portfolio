@@ -6,7 +6,36 @@
     <description>Recent content in Posts on ijadux2&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://nainablog.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://nainablog.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nxios</title>
+      <link>https://nainablog.vercel.app/posts/nxios/</link>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://nainablog.vercel.app/posts/nxios/</guid>
+      
+      <description>&lt;h2 id=&#34;nxios&#34;&gt;Nxios&lt;/h2&gt;
+&lt;p&gt;I use Nixos as my daily driver Operating System and i Love it.&lt;/p&gt;
+&lt;h2 id=&#34;benefits-of-nix-configured-system&#34;&gt;Benefits of Nix-configured System&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Whole OS in some declerative files &lt;strong&gt;.nix&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;esay to configure if you know&lt;/li&gt;
+&lt;li&gt;freedom to choose and config&lt;/li&gt;
+&lt;li&gt;make custome modules and pkgs for your setup&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;disadvantages&#34;&gt;Disadvantages&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Leraning curve extreme&lt;/li&gt;
+&lt;li&gt;unique errors and confusing&lt;/li&gt;
+&lt;li&gt;time to setup&lt;/li&gt;
+&lt;li&gt;learn the basics of linux, nix-lang, nix-pkgs etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclution&#34;&gt;conclution&lt;/h2&gt;
+&lt;p&gt;after all Nixos wins from Archlinux not just in terms of
+customizations, built for stability with Looks, manageable.&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Indian_culture</title>
       <link>https://nainablog.vercel.app/posts/indian_culture/</link>
