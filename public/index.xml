@@ -416,11 +416,18 @@ rust&lt;/p&gt;
       <guid>https://nainablog.vercel.app/pages/about/</guid>
       
       <description>&lt;h2 id=&#34;hello-im-kumar-vaibhav&#34;&gt;Hello, I&amp;rsquo;m Kumar Vaibhav&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m a passionate programmer with expertise in system scripting and configuration management. I enjoy building efficient tools and automating workflows.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;love to build&lt;/li&gt;
+&lt;li&gt;hands in config management&lt;/li&gt;
+&lt;li&gt;shell scripting&lt;/li&gt;
+&lt;li&gt;window managers&lt;/li&gt;
+&lt;li&gt;leraning Linux architecture&lt;/li&gt;
+&lt;li&gt;student&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h3 id=&#34;about-me&#34;&gt;About Me&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;💻 Using Neovim as my main editor&lt;br&gt;
-Linux user since - 🐧2020&lt;/li&gt;
+&lt;li&gt;💻 Using Neovim as my main editor&lt;/li&gt;
+&lt;li&gt;Linux user since - 🐧2020&lt;/li&gt;
 &lt;li&gt;🔧 Building custom configurations and sharing them&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;skills&#34;&gt;Skills&lt;/h2&gt;
@@ -430,11 +437,15 @@ Linux user since - 🐧2020&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt; - Versatile programming&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Linux&lt;/strong&gt; - System administration&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Nix&lt;/strong&gt; - Declarative package management&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Window Managers&lt;/strong&gt; - Hyprland, BSPWM, Sway&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Window Managers&lt;/strong&gt; - Hyprland, Sway&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;projects&#34;&gt;Projects&lt;/h2&gt;
-&lt;h3 id=&#34;neovim-customizations&#34;&gt;Neovim Customizations&lt;/h3&gt;
-&lt;p&gt;Building Neovim with Lazy for a good code editor for Linux&lt;/p&gt;</description>
+&lt;h3 id=&#34;linux-development-environment&#34;&gt;Linux Development Environment&lt;/h3&gt;
+&lt;h4 id=&#34;-neovim-configuration&#34;&gt;⚡ Neovim Configuration&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Architecting a modular IDE experience.&lt;/strong&gt; Built with &lt;code&gt;Sharingan.nvim&lt;/code&gt; for maximum
+performance, this configuration transforms Neovim into a heavyweight development
+environment. It focuses on lightning-fast startup times, intuitive keybindings,
+and a decoupled plugin architecture.&lt;/p&gt;</description>
       
     </item>
     
