@@ -27,5 +27,4 @@ I use Nixos as my daily driver Operating System and i Love it.
 after all Nixos wins from Archlinux not just in terms of
 customizations, built for stability with Looks, manageable.
 
-> [!info] Title
 > I use Nixos btw
