@@ -6,7 +6,27 @@
     <description>Recent content in Posts on ijadux2&#39;s website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
-    <lastBuildDate>Sun, 08 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://nainablog.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 13 Mar 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://nainablog.vercel.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>c</title>
+      <link>https://nainablog.vercel.app/posts/c/</link>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      
+      <guid>https://nainablog.vercel.app/posts/c/</guid>
+      
+      <description>&lt;h3 id=&#34;sorry&#34;&gt;sorry&lt;/h3&gt;
+&lt;p&gt;i was bussy for some days and i can&amp;rsquo;t post any blogs for 5-6 days
+but from now i will post blogs frequently&lt;/p&gt;
+&lt;h2 id=&#34;c&#34;&gt;c&lt;/h2&gt;
+&lt;p&gt;i am learning zig and c both the same time.
+yeahh !! dual language same time !!&lt;/p&gt;
+&lt;p&gt;jokes aside, i am tring to build a custome kernel for myself
+that works , have great performace and easy to setup&lt;/p&gt;
+&lt;h2 id=&#34;kernel&#34;&gt;kernel&lt;/h2&gt;
+&lt;p&gt;inspired from linux-zen&lt;/p&gt;</description>
+      
+    </item>
+    
     <item>
       <title>Nixos</title>
       <link>https://nainablog.vercel.app/posts/nixos/</link>
